@@ -32,7 +32,7 @@ export default function Home() {
         <div className="container flex items-center justify-between py-4">
           <div className="flex items-center gap-3">
             <img 
-              src="/images/logo_cristofoli.png" 
+              src="/images/logo-oficial.png" 
               alt="Festival Cristófoli" 
               className="h-12 w-auto"
             />
@@ -75,7 +75,7 @@ export default function Home() {
             {/* Logo Animated */}
             <div className="mb-8 animate-pulse">
               <img 
-                src="/images/logo_cristofoli.png" 
+                src="/images/logo-oficial.png" 
                 alt="Festival Cristófoli 2026" 
                 className="h-32 md:h-48 w-auto mx-auto drop-shadow-2xl"
               />

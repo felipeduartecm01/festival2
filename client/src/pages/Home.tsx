@@ -82,13 +82,13 @@ export default function Home() {
             </div>
 
             {/* Main Title */}
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-festival-yellow mb-2 drop-shadow-lg" style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '0.05em' }}>
-              VIVA UMA
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-festival-yellow mb-8 drop-shadow-lg" style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '0.05em' }}>
+              MAIOR FESTIVAL
             </h1>
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg" style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '0.05em' }}>
-              <span className="text-festival-yellow">CRISTÓFOLI</span>
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 drop-shadow-lg" style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '0.05em' }}>
+              <span className="text-festival-pink">DE ROCK</span>
               <br />
-              <span className="text-festival-pink">EXPERIÊNCIA</span>
+              <span className="text-festival-yellow">DA REGIÃO</span>
             </h2>
 
             {/* Subtitle */}

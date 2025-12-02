@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Music, MapPin, Calendar, Ticket } from "lucide-react";
 import { useState } from "react";
+import CountdownTimer from "@/components/CountdownTimer";
+import InstagramFeed from "@/components/InstagramFeed";
 
 /**
  * Festival Cristófoli 2026 - Home Page
@@ -103,12 +105,12 @@ export default function Home() {
             <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center items-center text-white mt-12">
               <div className="flex items-center gap-2">
                 <Calendar className="w-5 h-5 md:w-6 md:h-6 text-festival-yellow" />
-                <span className="font-bold text-sm md:text-lg">DATA: EM BREVE</span>
+                <span className="font-bold text-sm md:text-lg">19 DE SETEMBRO DE 2026</span>
               </div>
               <div className="hidden md:block w-1 h-8 bg-festival-yellow"></div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-5 h-5 md:w-6 md:h-6 text-festival-yellow" />
-                <span className="font-bold text-sm md:text-lg">LOCAL: EM BREVE</span>
+                <span className="font-bold text-sm md:text-lg">MOURÃO GARDEN - CAMPO MOURÃO</span>
               </div>
             </div>
           </div>
@@ -117,6 +119,16 @@ export default function Home() {
         {/* Floating Elements */}
         <div className="absolute bottom-10 left-10 w-20 h-20 bg-festival-yellow rounded-full opacity-20 animate-bounce"></div>
         <div className="absolute top-20 right-10 w-32 h-32 bg-festival-pink rounded-full opacity-10 animate-pulse"></div>
+      </section>
+
+      {/* Countdown Section */}
+      <section className="py-20 bg-gradient-to-r from-festival-yellow/10 to-festival-pink/10 relative overflow-hidden">
+        <div className="container relative z-10">
+          <h2 className="text-5xl md:text-6xl font-bold text-festival-purple text-center mb-12" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+            FALTAM
+          </h2>
+          <CountdownTimer />
+        </div>
       </section>
 
       {/* About Section */}
@@ -246,6 +258,21 @@ export default function Home() {
               <button className="festival-button w-full text-base md:text-lg py-2 md:py-3">COMPRAR</button>
               <p className="text-xs text-gray-500 mt-3 text-center">Maiores de 18 anos</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Instagram Section */}
+      <section className="py-20 bg-white relative overflow-hidden">
+        <div className="container relative z-10">
+          <h2 className="text-5xl md:text-6xl font-bold text-festival-purple text-center mb-4" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+            SIGA NOSSA JORNADA
+          </h2>
+          <p className="text-center text-gray-600 mb-12 text-lg max-w-2xl mx-auto">
+            Acompanhe os bastidores, novidades e momentos especiais do Festival Cristofoli 2026
+          </p>
+          <div className="flex justify-center">
+            <InstagramFeed />
           </div>
         </div>
       </section>

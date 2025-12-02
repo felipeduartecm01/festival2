@@ -166,14 +166,10 @@ export default function Home() {
 
             {/* Right Image */}
             <div className="order-1 md:order-2">
-              <div 
-                className="h-96 md:h-full rounded-lg shadow-2xl"
-                style={{
-                  backgroundImage: "url('/images/stage_background.png')",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  minHeight: "400px"
-                }}
+              <img
+                src="/images/festival-performance.png"
+                alt="Festival Cristófoli - Apresentação ao vivo"
+                className="w-full h-auto rounded-lg shadow-2xl object-cover"
               />
             </div>
           </div>

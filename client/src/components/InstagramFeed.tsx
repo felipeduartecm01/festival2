@@ -28,10 +28,10 @@ export default function InstagramFeed() {
         height="600"
         frameBorder="0"
         scrolling="no"
-        allowTransparency={true}
         allow="encrypted-media"
         title="Festival Cristófoli Instagram Feed"
         className="rounded-lg shadow-lg"
+        style={{ background: 'transparent' }}
       ></iframe>
     </div>
   );

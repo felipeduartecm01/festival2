@@ -226,33 +226,19 @@ export default function Home() {
           </h2>
 
           {/* Ticket Types */}
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
-            {/* Ticket Type 1 */}
-            <div className="border-4 border-festival-purple rounded-lg p-6 md:p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105">
+          <div className="flex justify-center max-w-2xl mx-auto">
+            {/* Ticket Type - GERAL */}
+            <div className="border-4 border-festival-purple rounded-lg p-8 md:p-10 hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full md:w-96">
               <div className="flex items-start gap-3 mb-4">
                 <Ticket className="w-6 h-6 md:w-8 md:h-8 text-festival-pink flex-shrink-0 mt-1" />
-                <h3 className="text-2xl md:text-3xl font-bold text-festival-purple" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
-                  ENERGIA TOTAL
+                <h3 className="text-3xl md:text-4xl font-bold text-festival-purple" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+                  GERAL
                 </h3>
               </div>
-              <p className="text-sm md:text-base text-gray-600 mb-4">Acesso a area principal do festival</p>
-              <p className="text-3xl md:text-4xl font-bold text-festival-pink mb-6">EM BREVE</p>
-              <button className="festival-button w-full text-base md:text-lg py-2 md:py-3">COMPRAR</button>
-              <p className="text-xs text-gray-500 mt-3 text-center">Maiores de 18 anos</p>
-            </div>
-
-            {/* Ticket Type 2 */}
-            <div className="border-4 border-festival-pink rounded-lg p-6 md:p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105 bg-gradient-to-br from-festival-pink/5 to-festival-yellow/5">
-              <div className="flex items-start gap-3 mb-4">
-                <Music className="w-6 h-6 md:w-8 md:h-8 text-festival-yellow flex-shrink-0 mt-1" />
-                <h3 className="text-2xl md:text-3xl font-bold text-festival-purple" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
-                  VIP
-                </h3>
-              </div>
-              <p className="text-sm md:text-base text-gray-600 mb-4">Area exclusiva com beneficios adicionais</p>
-              <p className="text-3xl md:text-4xl font-bold text-festival-yellow mb-6">EM BREVE</p>
-              <button className="festival-button w-full text-base md:text-lg py-2 md:py-3">COMPRAR</button>
-              <p className="text-xs text-gray-500 mt-3 text-center">Maiores de 18 anos</p>
+              <p className="text-sm md:text-base text-gray-600 mb-6">Acesso completo ao Festival Cristófoli 2026</p>
+              <p className="text-4xl md:text-5xl font-bold text-festival-pink mb-8">EM BREVE</p>
+              <button className="festival-button w-full text-base md:text-lg py-3">COMPRAR</button>
+              <p className="text-xs text-gray-500 mt-4 text-center">Maiores de 18 anos</p>
             </div>
           </div>
         </div>

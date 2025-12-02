@@ -199,7 +199,7 @@ export default function Home() {
             </div>
           </div>
 
-          <p className="text-xl text-white max-w-2xl mx-auto mb-8">
+          <p className="text-xl text-festival-purple max-w-2xl mx-auto mb-8 font-medium">
             Os artistas confirmados serão revelados em breve. Fique atento às nossas redes sociais para não perder nenhuma novidade!
           </p>
 

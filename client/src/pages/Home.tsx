@@ -101,16 +101,18 @@ export default function Home() {
               GARANTA SEU INGRESSO JÁ
             </button>
 
-            {/* Event Info */}
-            <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center items-center text-white mt-12">
-              <div className="flex items-center gap-2">
-                <Calendar className="w-5 h-5 md:w-6 md:h-6 text-festival-yellow" />
-                <span className="font-bold text-sm md:text-lg">19 DE SETEMBRO DE 2026</span>
-              </div>
-              <div className="hidden md:block w-1 h-8 bg-festival-yellow"></div>
-              <div className="flex items-center gap-2">
-                <MapPin className="w-5 h-5 md:w-6 md:h-6 text-festival-yellow" />
-                <span className="font-bold text-sm md:text-lg">MOURÃO GARDEN - CAMPO MOURÃO</span>
+            {/* Event Info - Highlighted */}
+            <div className="mt-12 bg-white/95 backdrop-blur rounded-2xl p-6 md:p-8 shadow-2xl max-w-2xl mx-auto border-4 border-festival-yellow">
+              <div className="flex flex-col gap-4">
+                <div className="flex items-center gap-3 justify-center">
+                  <Calendar className="w-7 h-7 md:w-8 md:h-8 text-festival-pink flex-shrink-0" />
+                  <span className="font-bold text-lg md:text-2xl text-festival-purple">19 DE SETEMBRO DE 2026</span>
+                </div>
+                <div className="h-1 bg-gradient-to-r from-festival-yellow via-festival-pink to-festival-yellow rounded-full"></div>
+                <div className="flex items-center gap-3 justify-center">
+                  <MapPin className="w-7 h-7 md:w-8 md:h-8 text-festival-pink flex-shrink-0" />
+                  <span className="font-bold text-lg md:text-2xl text-festival-purple">MOURÃO GARDEN - CAMPO MOURÃO, PR</span>
+                </div>
               </div>
             </div>
           </div>

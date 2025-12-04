@@ -53,9 +53,9 @@ export default function Home() {
       <section className="relative h-screen bg-gradient-to-br from-festival-purple via-festival-purple to-festival-pink overflow-hidden">
         {/* Background Image with Overlay */}
         <div 
-          className="absolute inset-0 opacity-40"
+          className="absolute inset-0 opacity-50"
           style={{
-            backgroundImage: "url('/images/hero_festival_cristofoli.png')",
+            backgroundImage: "url('/images/hero_background.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

@@ -3,6 +3,7 @@ import { Music, MapPin, Calendar, Ticket } from "lucide-react";
 import { useState } from "react";
 import CountdownTimer from "@/components/CountdownTimer";
 import InstagramFeed from "@/components/InstagramFeed";
+import FAQ from "@/components/FAQ";
 
 /**
  * Festival Cristófoli 2026 - Home Page
@@ -260,6 +261,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQ />
 
       {/* Footer */}
       <footer className="bg-festival-purple text-white py-12">

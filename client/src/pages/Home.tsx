@@ -235,7 +235,7 @@ export default function Home() {
               <div className="flex items-start gap-3 mb-4">
                 <Ticket className="w-6 h-6 md:w-8 md:h-8 text-festival-pink flex-shrink-0 mt-1" />
                 <h3 className="text-3xl md:text-4xl font-bold text-festival-purple" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
-                  GERAL
+                  PRÉ-VENDA
                 </h3>
               </div>
               <p className="text-sm md:text-base text-gray-600 mb-6">Acesso completo ao Festival Cristófoli 2026</p>

@@ -88,8 +88,7 @@ export default function Home() {
             </h1>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 drop-shadow-lg" style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '0.05em' }}>
               <span className="text-festival-pink">DE ROCK</span>
-              <br />
-              <span className="text-festival-yellow">DA REGIÃO</span>
+              <span className="text-festival-yellow"> DA REGIÃO</span>
             </h2>
 
             {/* Subtitle */}

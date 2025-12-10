@@ -74,11 +74,12 @@ export default function Home() {
         <div className="relative h-full flex flex-col items-center justify-center px-4">
           <div className="text-center max-w-4xl animate-fade-in">
             {/* Logo Animated */}
-            <div className="mb-8 animate-pulse">
+            <div className="mb-12 animate-pulse relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-festival-pink/20 to-festival-yellow/20 blur-3xl rounded-full" style={{width: '280px', height: '280px', margin: 'auto'}}></div>
               <img 
                 src="/images/logo-oficial.png" 
                 alt="Festival Cristófoli 2026" 
-                className="h-32 md:h-48 w-auto mx-auto drop-shadow-2xl"
+                className="h-48 md:h-72 lg:h-80 w-auto mx-auto drop-shadow-2xl relative z-10 hover:scale-105 transition-transform duration-300"
               />
             </div>
 

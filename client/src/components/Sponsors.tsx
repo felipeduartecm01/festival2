@@ -9,7 +9,7 @@
 export default function Sponsors() {
   const sponsors = [
     { id: 1, name: "Cristófoli Biossegurança", category: "Ouro", logo: "/images/cristofoli-biosseguranca-logo.png", isImage: true },
-    { id: 2, name: "Patrocinador", category: "Prata" },
+    { id: 2, name: "BIOVIS", category: "Ouro", logo: "/images/biovis-logo.png", isImage: true },
     { id: 3, name: "Apoiador", category: "Bronze" },
     { id: 4, name: "Apoiador", category: "Bronze" },
     { id: 5, name: "Apoiador", category: "Bronze" },

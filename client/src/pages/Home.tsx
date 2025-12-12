@@ -4,6 +4,7 @@ import { useState } from "react";
 import CountdownTimer from "@/components/CountdownTimer";
 import InstagramFeed from "@/components/InstagramFeed";
 import FAQ from "@/components/FAQ";
+import Gallery from "@/components/Gallery";
 
 /**
  * Festival Cristófoli 2026 - Home Page
@@ -261,6 +262,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Gallery Section */}
+      <Gallery />
 
       {/* FAQ Section */}
       <FAQ />

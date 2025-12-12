@@ -5,6 +5,7 @@ import CountdownTimer from "@/components/CountdownTimer";
 import InstagramFeed from "@/components/InstagramFeed";
 import FAQ from "@/components/FAQ";
 import Gallery from "@/components/Gallery";
+import Sponsors from "@/components/Sponsors";
 
 /**
  * Festival Cristófoli 2026 - Home Page
@@ -265,6 +266,9 @@ export default function Home() {
 
       {/* Gallery Section */}
       <Gallery />
+
+      {/* Sponsors Section */}
+      <Sponsors />
 
       {/* FAQ Section */}
       <FAQ />

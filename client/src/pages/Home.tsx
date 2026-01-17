@@ -274,33 +274,65 @@ export default function Home() {
       <FAQ />
 
       {/* Footer */}
-      <footer className="bg-festival-purple text-white py-12">
+      <footer className="bg-festival-purple text-white py-16">
         <div className="container">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div>
-              <h4 className="text-xl font-bold mb-4" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>FESTIVAL</h4>
-              <p className="text-sm opacity-90">Festival Cristófoli 2026 - Desde 2011 celebrando música e cultura.</p>
+              <div className="flex items-center gap-2 mb-4">
+                <img 
+                  src="/images/logo-oficial.png" 
+                  alt="Festival Cristófoli" 
+                  className="h-10 w-auto"
+                />
+                <h4 className="text-xl font-bold" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>CRISTÓFOLI</h4>
+              </div>
+              <p className="text-sm opacity-90 mb-4">Festival Cristófoli 2026 - O maior festival de rock da região, celebrando música, cultura e comunidade desde 2011.</p>
+              <p className="text-xs opacity-75">19 de Setembro de 2026<br/>Mourão Garden - Campo Mourão, PR</p>
             </div>
             <div>
-              <h4 className="text-xl font-bold mb-4" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>LINKS</h4>
+              <h4 className="text-lg font-bold mb-4" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>NAVEGAÇÃO</h4>
               <ul className="text-sm space-y-2 opacity-90">
-                <li><a href="#" className="hover:text-festival-yellow transition">Sobre</a></li>
-                <li><a href="#" className="hover:text-festival-yellow transition">Ingressos</a></li>
+                <li><a href="#sobre" className="hover:text-festival-yellow transition">Sobre</a></li>
+                <li><a href="#lineup" className="hover:text-festival-yellow transition">Lineup</a></li>
+                <li><a href="#ingressos" className="hover:text-festival-yellow transition">Ingressos</a></li>
+                <li><a href="#galeria" className="hover:text-festival-yellow transition">Galeria</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-lg font-bold mb-4" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>INFORMAÇÕES</h4>
+              <ul className="text-sm space-y-2 opacity-90">
+                <li><a href="#faq" className="hover:text-festival-yellow transition">Perguntas Frequentes</a></li>
+                <li><a href="#" className="hover:text-festival-yellow transition">Política de Privacidade</a></li>
+                <li><a href="#" className="hover:text-festival-yellow transition">Termos de Uso</a></li>
                 <li><a href="#" className="hover:text-festival-yellow transition">Contato</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-xl font-bold mb-4" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>REDES</h4>
-              <ul className="text-sm space-y-2 opacity-90">
-                <li><a href="#" className="hover:text-festival-yellow transition">Facebook</a></li>
-                <li><a href="#" className="hover:text-festival-yellow transition">Instagram</a></li>
-                <li><a href="#" className="hover:text-festival-yellow transition">YouTube</a></li>
-              </ul>
+              <h4 className="text-lg font-bold mb-4" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>REDES SOCIAIS</h4>
+              <div className="flex gap-4 mb-6">
+                <a href="https://facebook.com/festivalcristofoli" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-festival-pink rounded-full flex items-center justify-center hover:bg-festival-yellow transition text-white font-bold text-sm">
+                  f
+                </a>
+                <a href="https://instagram.com/festivalcristofoli" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-festival-pink rounded-full flex items-center justify-center hover:bg-festival-yellow transition text-white">
+                  📷
+                </a>
+                <a href="https://youtube.com/@festivalcristofoli" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-festival-pink rounded-full flex items-center justify-center hover:bg-festival-yellow transition text-white">
+                  ▶
+                </a>
+              </div>
+              <p className="text-xs opacity-75">Siga-nos para atualizações e novidades!</p>
             </div>
           </div>
           
-          <div className="border-t border-festival-yellow pt-8 text-center text-sm opacity-75">
-            <p>&copy; 2026 Festival Cristófoli. Todos os direitos reservados.</p>
+          <div className="border-t border-festival-yellow/30 py-8">
+            <div className="grid md:grid-cols-2 gap-4 text-xs opacity-75">
+              <div>
+                <p>&copy; 2026 Festival Cristófoli. Todos os direitos reservados.</p>
+              </div>
+              <div className="md:text-right">
+                <p>Desenvolvido com 🎸 para a comunidade de Campo Mourão</p>
+              </div>
+            </div>
           </div>
         </div>
       </footer>

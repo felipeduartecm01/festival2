@@ -6,6 +6,8 @@ import InstagramFeed from "@/components/InstagramFeed";
 import FAQ from "@/components/FAQ";
 import Gallery from "@/components/Gallery";
 import Sponsors from "@/components/Sponsors";
+import ArtistCard from "@/components/ArtistCard";
+import { artists } from "@/data/artists";
 
 /**
  * Festival Cristófoli 2026 - Home Page
@@ -181,44 +183,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Lineup Section - Coming Soon */}
-      <section id="lineup" className="py-20 bg-gradient-to-r from-festival-purple to-festival-pink relative overflow-hidden">
-        {/* Animated Background */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: "url('/images/festival_pattern.png')",
-            backgroundSize: "300px",
-            animation: "drift 20s linear infinite"
-          }} />
-        </div>
-
-        <div className="container relative z-10 text-center">
-          <h2 className="text-6xl md:text-7xl font-bold text-festival-yellow mb-6" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+      {/* Lineup Section */}
+      <section id="lineup" className="py-20 bg-white relative overflow-hidden">
+        <div className="container relative z-10">
+          <h2 className="text-6xl md:text-7xl font-bold text-festival-purple text-center mb-4" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
             LINEUP
           </h2>
-
-          {/* Coming Soon Badge */}
-          <div className="inline-block mb-12">
-            <div className="festival-badge text-2xl px-8 py-6">
-              VEM AÍ...
-            </div>
-          </div>
-
-          <p className="text-xl text-festival-purple max-w-2xl mx-auto mb-8 font-medium">
-            Os artistas confirmados serão revelados em breve. Fique atento às nossas redes sociais para não perder nenhuma novidade!
+          <p className="text-center text-gray-600 mb-16 text-lg max-w-2xl mx-auto">
+            Conheça os artistas que vão fazer história no Festival Cristófoli 2026. Clique em qualquer artista para ver mais detalhes!
           </p>
 
-          {/* Social Links Placeholder */}
-          <div className="flex justify-center gap-6 mt-12">
-            <button className="w-12 h-12 rounded-full bg-festival-yellow text-festival-purple font-bold flex items-center justify-center hover:scale-110 transition">
-              f
-            </button>
-            <button className="w-12 h-12 rounded-full bg-festival-yellow text-festival-purple font-bold flex items-center justify-center hover:scale-110 transition">
-              @
-            </button>
-            <button className="w-12 h-12 rounded-full bg-festival-yellow text-festival-purple font-bold flex items-center justify-center hover:scale-110 transition">
-              ▶
-            </button>
+          {/* Artists Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {artists.map(artist => (
+              <ArtistCard key={artist.id} artist={artist} />
+            ))}
           </div>
         </div>
       </section>

@@ -48,6 +48,7 @@ export default function Home() {
           </div>
           <nav className="hidden md:flex gap-8">
             <a href="#sobre" className="text-festival-purple font-bold hover:text-festival-pink transition">SOBRE</a>
+            <a href="/agenda" className="text-festival-purple font-bold hover:text-festival-pink transition">AGENDA</a>
             <a href="#lineup" className="text-festival-purple font-bold hover:text-festival-pink transition">LINEUP</a>
             <a href="#ingressos" className="text-festival-purple font-bold hover:text-festival-pink transition">INGRESSOS</a>
           </nav>

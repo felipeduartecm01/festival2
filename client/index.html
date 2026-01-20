@@ -15,6 +15,15 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Proteção contra erros de analytics
+      window.addEventListener('error', function(e) {
+        if (e.filename && e.filename.includes('umami')) {
+          console.warn('Analytics error caught and suppressed');
+          return true;
+        }
+      }, true);
+    </script>
     <script
       defer
       src="%VITE_ANALYTICS_ENDPOINT%/umami"

@@ -274,7 +274,7 @@ export default function Home() {
       <FAQ />
 
       {/* Footer */}
-      <footer className="bg-festival-purple text-white py-16">
+      <footer className="bg-gradient-to-br from-festival-purple to-[#6B2B9F] text-white py-16">
         <div className="container">
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div>

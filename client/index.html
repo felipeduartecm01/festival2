@@ -18,17 +18,26 @@
     <script>
       // Proteção contra erros de analytics
       window.addEventListener('error', function(e) {
-        if (e.filename && e.filename.includes('umami')) {
+        if (e.filename && (e.filename.includes('umami') || e.filename.includes('analytics'))) {
           console.warn('Analytics error caught and suppressed');
           return true;
         }
       }, true);
+      
+      // Proteção contra unhandled rejections
+      window.addEventListener('unhandledrejection', function(e) {
+        if (e.reason && typeof e.reason === 'string' && e.reason.includes('analytics')) {
+          console.warn('Analytics promise rejection suppressed');
+          e.preventDefault();
+        }
+      });
     </script>
     <script
       defer
       src="%VITE_ANALYTICS_ENDPOINT%/umami"
       data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"
-      onerror="console.warn('Analytics script failed to load')"></script>
+      onerror="console.warn('Analytics script failed to load')"
+      onload="console.log('Analytics loaded successfully')"></script>
   </body>
 
 </html>

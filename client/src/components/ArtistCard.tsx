@@ -9,7 +9,7 @@ interface ArtistCardProps {
 export default function ArtistCard({ artist }: ArtistCardProps) {
   return (
     <Link href={`/artist/${artist.id}`}>
-      <a className="group block h-full">
+      <div className="group block h-full cursor-pointer">
         <div className="relative h-full bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 border-festival-purple/10">
           {/* Artist Image */}
           <div className="relative h-64 overflow-hidden bg-gradient-to-br from-festival-purple/20 to-festival-pink/20">
@@ -50,48 +50,48 @@ export default function ArtistCard({ artist }: ArtistCardProps) {
             {/* Social Links */}
             <div className="flex gap-3 justify-center">
               {artist.social.instagram && (
-                <a
-                  href={`https://instagram.com/${artist.social.instagram}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.open(`https://instagram.com/${artist.social.instagram}`, '_blank');
+                  }}
                   className="w-8 h-8 rounded-full bg-festival-purple/10 text-festival-purple hover:bg-festival-pink hover:text-white flex items-center justify-center transition-all duration-200"
                 >
                   <Instagram className="w-4 h-4" />
-                </a>
+                </button>
               )}
               {artist.social.spotify && (
-                <a
-                  href={`https://open.spotify.com/artist/${artist.social.spotify}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.open(`https://open.spotify.com/artist/${artist.social.spotify}`, '_blank');
+                  }}
                   className="w-8 h-8 rounded-full bg-festival-purple/10 text-festival-purple hover:bg-festival-pink hover:text-white flex items-center justify-center transition-all duration-200"
                 >
                   <SpotifyIcon className="w-4 h-4" />
-                </a>
+                </button>
               )}
               {artist.social.youtube && (
-                <a
-                  href={`https://youtube.com/${artist.social.youtube}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.open(`https://youtube.com/${artist.social.youtube}`, '_blank');
+                  }}
                   className="w-8 h-8 rounded-full bg-festival-purple/10 text-festival-purple hover:bg-festival-pink hover:text-white flex items-center justify-center transition-all duration-200"
                 >
                   <Youtube className="w-4 h-4" />
-                </a>
+                </button>
               )}
               {artist.social.twitter && (
-                <a
-                  href={`https://twitter.com/${artist.social.twitter}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.open(`https://twitter.com/${artist.social.twitter}`, '_blank');
+                  }}
                   className="w-8 h-8 rounded-full bg-festival-purple/10 text-festival-purple hover:bg-festival-pink hover:text-white flex items-center justify-center transition-all duration-200"
                 >
                   <Twitter className="w-4 h-4" />
-                </a>
+                </button>
               )}
             </div>
 
@@ -101,7 +101,7 @@ export default function ArtistCard({ artist }: ArtistCardProps) {
             </button>
           </div>
         </div>
-      </a>
+      </div>
     </Link>
   );
 }

@@ -7,6 +7,7 @@ import FAQ from "@/components/FAQ";
 import Gallery from "@/components/Gallery";
 import Sponsors from "@/components/Sponsors";
 import ArtistCard from "@/components/ArtistCard";
+import Timeline from "@/components/Timeline";
 import { artists } from "@/data/artists";
 
 /**
@@ -243,6 +244,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Timeline Section */}
+      <Timeline />
 
       {/* Gallery Section */}
       <Gallery />

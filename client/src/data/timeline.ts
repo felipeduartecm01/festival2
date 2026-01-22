@@ -57,14 +57,14 @@ export const timelineEvents: TimelineEvent[] = [
   },
   {
     year: 2015,
-    title: "Múltiplos Palcos",
-    description: "Com a adição de múltiplos palcos, o festival expandiu sua capacidade de apresentações simultâneas, oferecendo experiência única aos visitantes.",
+    title: "Responsabilidade Social",
+    description: "Em 2015, o Festival Cristófoli realizou seu evento no OPERA HALL com uma missão especial: arrecadar fundos para instituições de caridade. O festival repassou R$7.000,00 para o Lar Dona Jacira, demonstrando o compromisso com a comunidade e o impacto social do evento.",
     image: "/images/timeline-2015.png",
     highlights: [
-      "Três palcos principais",
-      "Programação simultânea",
-      "Maior público",
-      "Experiência imersiva"
+      "Evento no OPERA HALL",
+      "Arrecadação para caridade",
+      "R$7.000,00 para Lar Dona Jacira",
+      "Responsabilidade social"
     ]
   },
   {

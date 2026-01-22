@@ -93,14 +93,14 @@ export const timelineEvents: TimelineEvent[] = [
   },
   {
     year: 2018,
-    title: "Expansão Contínua",
-    description: "Com infraestrutura expandida e múltiplas áreas de diversão, o festival oferecia experiência completa além da música.",
+    title: "8º Festival - Novo Formato",
+    description: "Em 2018, o 8º Festival Cristófoli tomou outro formato com inúmeras novidades: espaço kids, festival de chopp, área gastronômica completa e programação estendida começando às 14h. Sete bandas animaram o evento: Sem Base, THC, Priscilla e Banda, The Barbas, Sapatos Elétricos, Dirigível Cósmico e Banda Tenessee com cover do Creedence. Um festival para toda a família!",
     image: "/images/timeline-2018.png",
     highlights: [
-      "Múltiplas áreas",
-      "Infraestrutura expandida",
-      "Experiência completa",
-      "Público recorde"
+      "Espaço kids",
+      "Festival de chopp",
+      "Área gastronômica",
+      "7 bandas - Começa às 14h"
     ]
   },
   {

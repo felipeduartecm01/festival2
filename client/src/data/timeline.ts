@@ -10,13 +10,13 @@ export const timelineEvents: TimelineEvent[] = [
   {
     year: 2011,
     title: "O Começo de uma Lenda",
-    description: "Tudo começou em 2011 com uma pequena apresentação de rock em Campo Mourão. O Festival Cristófoli nasceu da paixão pela música e pela comunidade local.",
+    description: "Tudo começou em 2011 com um evento especial no Espaço UNIQUE, reunindo colaboradores da empresa Cristófoli e convidados. A primeira banda era formada por colaboradores da empresa: Danilo Pusch, Willian, Marcio França, Jhony e Gustavo. Cerca de 80 pessoas presentes marcaram o início de uma tradição que perduraria por mais de uma década.",
     image: "/images/timeline-2011.png",
     highlights: [
-      "Primeira edição do festival",
-      "Banda de rock local",
-      "Público reduzido mas apaixonado",
-      "Início de uma tradição"
+      "Evento no Espaço UNIQUE",
+      "Banda de colaboradores Cristófoli",
+      "Aproximadamente 80 pessoas",
+      "Danilo Pusch, Willian, Marcio França, Jhony e Gustavo"
     ]
   },
   {

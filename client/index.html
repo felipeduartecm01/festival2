@@ -16,18 +16,21 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script>
-      // Proteção contra erros de analytics
+      // Proteção robusta contra erros de terceiros
       window.addEventListener('error', function(e) {
-        if (e.filename && (e.filename.includes('umami') || e.filename.includes('analytics'))) {
-          console.warn('Analytics error caught and suppressed');
+        if (e.filename && (e.filename.includes('umami') || e.filename.includes('analytics') || e.filename.includes('cdn'))) {
+          console.warn('Third-party script error caught and suppressed');
+          return true;
+        }
+        if (e.message && (e.message.includes('analytics') || e.message.includes('tracking'))) {
+          console.warn('Third-party error suppressed');
           return true;
         }
       }, true);
       
-      // Proteção contra unhandled rejections
       window.addEventListener('unhandledrejection', function(e) {
-        if (e.reason && typeof e.reason === 'string' && e.reason.includes('analytics')) {
-          console.warn('Analytics promise rejection suppressed');
+        if (e.reason && typeof e.reason === 'string' && (e.reason.includes('analytics') || e.reason.includes('tracking'))) {
+          console.warn('Third-party promise rejection suppressed');
           e.preventDefault();
         }
       });

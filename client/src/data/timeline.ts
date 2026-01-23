@@ -152,6 +152,18 @@ export const timelineEvents: TimelineEvent[] = [
     ]
   },
   {
+    year: 2023,
+    title: "11º Festival - Recorde de Solidariedade",
+    description: "O 11º Festival Cristófoli em 2023 estabeleceu um novo recorde de responsabilidade social, arrecadando R$40.000,00 para o Lar Dona Jacira. Este foi o maior valor repassado até então, demonstrando o crescimento exponencial do impacto social do festival e o compromisso contínuo com a comunidade.",
+    image: "/images/timeline-2023-donation.png",
+    highlights: [
+      "11º Festival Cristófoli",
+      "Recorde de arrecadação",
+      "R$40.000,00 para Lar Dona Jacira",
+      "Maior doação até então"
+    ]
+  },
+  {
     year: 2026,
     title: "O Futuro é Agora",
     description: "2026 traz o Festival Cristófoli para o futuro com tecnologia holográfica, produção futurista e experiência transcendental.",

@@ -69,14 +69,14 @@ export const timelineEvents: TimelineEvent[] = [
   },
   {
     year: 2016,
-    title: "Escala Massiva",
-    description: "2016 marcou o festival em escala massiva com milhares de pessoas, produção de classe mundial e reconhecimento nacional.",
+    title: "6ª Edição - Responsabilidade Social",
+    description: "A 6ª edição do Festival Cristófoli consolidou o compromisso com a responsabilidade social, arrecadando R$10.000,00 para o Lar Dona Jacira. Um marco importante que demonstra como o festival pode impactar positivamente a comunidade.",
     image: "/images/timeline-2016.png",
     highlights: [
-      "Público de milhares",
-      "Produção internacional",
-      "Cobertura nacional",
-      "Consolidação como grande festival"
+      "6ª edição do festival",
+      "R$10.000,00 doados para Lar Dona Jacira",
+      "Responsabilidade social",
+      "Impacto comunitário"
     ]
   },
   {

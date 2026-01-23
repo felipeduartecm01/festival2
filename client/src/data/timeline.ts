@@ -164,6 +164,18 @@ export const timelineEvents: TimelineEvent[] = [
     ]
   },
   {
+    year: 2025,
+    title: "12º Festival - Expansão do Impacto Social",
+    description: "O 12º Festival Cristófoli em 2025 expandiu ainda mais seu compromisso com a responsabilidade social, arrecadando um total de R$68.000,00. Desta vez, o festival ampliou seu alcance de solidariedade, repassando R$50.000,00 para o Lar Dona Jacira e R$18.000,00 para o Lar Dom Bosco, demonstrando o crescimento e a consolidação do impacto social do festival em múltiplas instituições da comunidade.",
+    image: "/images/timeline-2025.png",
+    highlights: [
+      "12º Festival Cristófoli",
+      "Arrecadação total: R$68.000,00",
+      "R$50.000,00 para Lar Dona Jacira",
+      "R$18.000,00 para Lar Dom Bosco"
+    ]
+  },
+  {
     year: 2026,
     title: "O Futuro é Agora",
     description: "2026 traz o Festival Cristófoli para o futuro com tecnologia holográfica, produção futurista e experiência transcendental.",

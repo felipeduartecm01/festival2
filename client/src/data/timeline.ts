@@ -71,7 +71,7 @@ export const timelineEvents: TimelineEvent[] = [
     year: 2016,
     title: "6ª Edição - Responsabilidade Social",
     description: "A 6ª edição do Festival Cristófoli consolidou o compromisso com a responsabilidade social, arrecadando R$10.000,00 para o Lar Dona Jacira. Um marco importante que demonstra como o festival pode impactar positivamente a comunidade.",
-    image: "/images/timeline-2016.png",
+    image: "/images/timeline-2016-donation.png",
     highlights: [
       "6ª edição do festival",
       "R$10.000,00 doados para Lar Dona Jacira",

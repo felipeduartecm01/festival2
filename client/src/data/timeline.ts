@@ -59,7 +59,7 @@ export const timelineEvents: TimelineEvent[] = [
     year: 2015,
     title: "Responsabilidade Social",
     description: "Em 2015, o Festival Cristófoli realizou seu evento no OPERA HALL com uma missão especial: arrecadar fundos para instituições de caridade. O festival repassou R$7.000,00 para o Lar Dona Jacira, demonstrando o compromisso com a comunidade e o impacto social do evento.",
-    image: "/images/timeline-2015.png",
+    image: "/images/timeline-2015-donation.png",
     highlights: [
       "Evento no OPERA HALL",
       "Arrecadação para caridade",

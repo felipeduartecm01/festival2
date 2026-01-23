@@ -185,6 +185,60 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Social Impact Section */}
+      <section className="py-20 bg-gradient-to-r from-festival-pink/10 to-festival-purple/10 relative overflow-hidden">
+        <div className="container relative z-10">
+          <div className="bg-white rounded-2xl p-12 md:p-16 shadow-2xl border-4 border-festival-pink">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              {/* Left Content */}
+              <div>
+                <h2 className="text-5xl md:text-6xl font-bold text-festival-purple mb-6" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+                  RESPONSABILIDADE
+                  <span className="text-festival-pink"> SOCIAL</span>
+                </h2>
+                
+                <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+                  O Festival Cristófoli não é apenas um evento de música. Desde 2015, nos comprometemos com a responsabilidade social, repassando o resultado dos festivais para o Lar Dona Jacira.
+                </p>
+
+                <div className="bg-gradient-to-r from-festival-purple to-festival-pink rounded-xl p-8 text-white">
+                  <p className="text-sm font-bold opacity-90 mb-2">TOTAL ARRECADADO</p>
+                  <p className="text-6xl md:text-7xl font-bold" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>R$ 77 MIL</p>
+                  <p className="text-sm opacity-90 mt-4">Repassados para o Lar Dona Jacira desde 2015</p>
+                </div>
+              </div>
+
+              {/* Right Stats */}
+              <div className="space-y-6">
+                <div className="bg-gradient-to-br from-festival-yellow/20 to-festival-pink/20 rounded-xl p-6 border-2 border-festival-yellow">
+                  <p className="text-sm text-gray-600 font-bold mb-2">2015 - 5ª Edição</p>
+                  <p className="text-4xl font-bold text-festival-purple">R$ 7.000</p>
+                  <p className="text-xs text-gray-600 mt-2">Lar Dona Jacira</p>
+                </div>
+                
+                <div className="bg-gradient-to-br from-festival-yellow/20 to-festival-pink/20 rounded-xl p-6 border-2 border-festival-yellow">
+                  <p className="text-sm text-gray-600 font-bold mb-2">2016 - 6ª Edição</p>
+                  <p className="text-4xl font-bold text-festival-purple">R$ 10.000</p>
+                  <p className="text-xs text-gray-600 mt-2">Lar Dona Jacira</p>
+                </div>
+                
+                <div className="bg-gradient-to-br from-festival-yellow/20 to-festival-pink/20 rounded-xl p-6 border-2 border-festival-yellow">
+                  <p className="text-sm text-gray-600 font-bold mb-2">2019 - 9ª Edição</p>
+                  <p className="text-4xl font-bold text-festival-purple">R$ 20.000</p>
+                  <p className="text-xs text-gray-600 mt-2">Lar Dona Jacira</p>
+                </div>
+                
+                <div className="bg-gradient-to-br from-festival-yellow/20 to-festival-pink/20 rounded-xl p-6 border-2 border-festival-yellow">
+                  <p className="text-sm text-gray-600 font-bold mb-2">2023 - 11ª Edição</p>
+                  <p className="text-4xl font-bold text-festival-purple">R$ 40.000</p>
+                  <p className="text-xs text-gray-600 mt-2">Lar Dona Jacira</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Lineup Section */}
       <section id="lineup" className="py-20 bg-white relative overflow-hidden">
         <div className="container relative z-10">

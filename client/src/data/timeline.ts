@@ -105,14 +105,14 @@ export const timelineEvents: TimelineEvent[] = [
   },
   {
     year: 2019,
-    title: "Auge da Produção",
-    description: "2019 representou o auge da produção com estrutura monumental, iluminação de classe mundial e apresentações inesquecíveis.",
-    image: "/images/timeline-2019.png",
+    title: "9º Festival - 50º Aniversário da Woodstock",
+    description: "O 9º Festival Cristófoli homenageou o 50º aniversário da Woodstock com um evento memorável realizado em 28 de setembro de 2019. Pela primeira vez, o festival contou com 2 palcos simultâneos e 9 atrações, começando às 14h. A arrecadação de R$20.000,00 para o Lar Dona Jacira consolidou o festival como um evento de responsabilidade social e grande impacto comunitário.",
+    image: "/images/timeline-2019-donation.png",
     highlights: [
-      "Produção monumental",
-      "Iluminação de classe mundial",
-      "Artistas internacionais",
-      "Experiência premium"
+      "9º Festival Cristófoli",
+      "50º Aniversário da Woodstock",
+      "2 palcos com 9 atrações",
+      "R$20.000,00 para Lar Dona Jacira"
     ]
   },
   {

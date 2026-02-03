@@ -16,13 +16,13 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(/images/hero-bg.jpg)',
+            backgroundImage: 'url(/images/hero_background.png)',
           }}
         ></div>
 
         <div className="container relative z-20 text-center text-white">
           <div className="mb-8">
-            <img src="/images/logo.png" alt="Festival Cristófoli" className="h-24 mx-auto mb-8" />
+            <img src="/images/logo_cristofoli.png" alt="Festival Cristófoli" className="h-24 mx-auto mb-8" />
           </div>
 
           <h1 className="text-7xl md:text-8xl font-black mb-6" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
@@ -102,7 +102,7 @@ export default function Home() {
             <div className="relative">
               <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/about-section.jpg"
+                  src="/images/festival-performance.png"
                   alt="Festival Cristófoli"
                   className="w-full h-full object-cover"
                 />

@@ -133,7 +133,7 @@ export default function Home() {
           {/* Main Total Card */}
           <div className="mb-16">
             <div className="bg-white rounded-3xl p-12 md:p-16 shadow-2xl text-center">
-              <p className="text-sm font-bold text-festival-purple mb-4 tracking-widest">TOTAL ARRECADADO DESDE 2015</p>
+              <p className="text-sm font-bold text-festival-yellow mb-4 tracking-widest">TOTAL ARRECADADO DESDE 2015</p>
               <p className="text-8xl md:text-9xl font-black text-transparent bg-clip-text bg-gradient-to-r from-festival-purple to-festival-pink mb-4" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                 R$ 183 MIL
               </p>

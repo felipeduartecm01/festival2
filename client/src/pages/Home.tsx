@@ -9,229 +9,248 @@ export default function Home() {
   const [selectedArtist, setSelectedArtist] = useState<typeof artists[0] | null>(null);
 
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
+    <div className="min-h-screen bg-black overflow-hidden">
+      {/* Hero Section - Cinematographic */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60 z-10"></div>
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: 'url(/images/hero_background.png)',
-          }}
-        ></div>
-
-        <div className="container relative z-20 text-center text-white">
-          <div className="mb-8">
-            <img src="/images/logo_cristofoli.png" alt="Festival Cristófoli" className="h-24 mx-auto mb-8" />
-          </div>
-
-          <h1 className="text-7xl md:text-8xl font-black mb-6 hero-title" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
-            MAIOR FESTIVAL
-            <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-festival-pink to-festival-yellow">
-              DE ROCK DA REGIÃO
-            </span>
-          </h1>
-
-          <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed font-light hero-description">
-            Curta um dia inteiro de música, energia e momentos inesquecíveis com artistas que vão fazer história no palco do Festival Cristófoli 2026.
-          </p>
-
-          <Link href="#agenda">
-            <Button className="bg-gradient-to-r from-festival-pink to-festival-purple hover:shadow-2xl text-white px-12 py-8 text-xl font-bold rounded-full hero-button">
-              GARANTA SEU INGRESSO JÁ
-            </Button>
-          </Link>
+        {/* Background with parallax effect */}
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{
+              backgroundImage: 'url(/images/hero_background.png)',
+              backgroundAttachment: 'fixed',
+            }}
+          ></div>
+          {/* Overlay with gradient */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/80"></div>
+          {/* Animated gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/90"></div>
         </div>
 
-        {/* Countdown Card */}
-        <div className="absolute bottom-8 left-0 right-0 z-10 flex justify-center px-4 countdown-card">
-          <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl p-8 md:p-12 max-w-3xl w-full border border-white/20">
-            <p className="text-festival-purple text-sm md:text-base mb-6 tracking-widest font-bold text-center">FALTAM PARA O FESTIVAL</p>
+        {/* Content */}
+        <div className="relative z-20 container">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Left side - Text content */}
+            <div className="text-white">
+              <div className="mb-8 hero-title">
+                <p className="text-festival-yellow text-lg md:text-xl font-bold tracking-widest mb-4">FESTIVAL CRISTÓFOLI 2026</p>
+                <h1 className="text-6xl md:text-8xl font-black mb-6 leading-tight" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+                  MAIOR
+                  <br />
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-festival-pink via-festival-yellow to-festival-pink">
+                    FESTIVAL
+                  </span>
+                  <br />
+                  DE ROCK
+                </h1>
+              </div>
+
+              <p className="text-xl md:text-2xl mb-8 leading-relaxed font-light hero-description max-w-lg">
+                Um dia inteiro de música, energia e momentos inesquecíveis com artistas que vão fazer história no palco.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 hero-button">
+                <Link href="#agenda">
+                  <Button className="bg-gradient-to-r from-festival-pink to-festival-purple hover:shadow-2xl text-white px-12 py-8 text-xl font-bold rounded-full w-full sm:w-auto">
+                    GARANTA SEU INGRESSO
+                  </Button>
+                </Link>
+                <Link href="#timeline">
+                  <Button variant="outline" className="border-2 border-festival-yellow text-festival-yellow hover:bg-festival-yellow hover:text-black px-12 py-8 text-xl font-bold rounded-full w-full sm:w-auto">
+                    NOSSA HISTÓRIA
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Right side - Countdown Card */}
+            <div className="hidden md:block countdown-card">
+              <div className="bg-white/10 backdrop-blur-xl rounded-3xl shadow-2xl p-12 border border-white/20">
+                <p className="text-festival-yellow text-sm font-bold tracking-widest mb-8 text-center">FALTAM PARA O EVENTO</p>
+                
+                <div className="grid grid-cols-2 gap-4 mb-8">
+                  <div className="bg-gradient-to-br from-festival-yellow/20 to-festival-pink/20 rounded-2xl px-6 py-8 text-center border border-festival-yellow/30 hover:border-festival-yellow/60 transition-all hover:scale-105">
+                    <p className="text-4xl font-black text-festival-yellow">238</p>
+                    <p className="text-xs font-bold text-white/70 mt-3 tracking-widest">DIAS</p>
+                  </div>
+                  <div className="bg-gradient-to-br from-festival-purple/20 to-festival-pink/20 rounded-2xl px-6 py-8 text-center border border-festival-purple/30 hover:border-festival-purple/60 transition-all hover:scale-105">
+                    <p className="text-4xl font-black text-festival-purple">18</p>
+                    <p className="text-xs font-bold text-white/70 mt-3 tracking-widest">HORAS</p>
+                  </div>
+                  <div className="bg-gradient-to-br from-festival-purple/20 to-festival-yellow/20 rounded-2xl px-6 py-8 text-center border border-festival-purple/30 hover:border-festival-purple/60 transition-all hover:scale-105">
+                    <p className="text-4xl font-black text-festival-purple">36</p>
+                    <p className="text-xs font-bold text-white/70 mt-3 tracking-widest">MINUTOS</p>
+                  </div>
+                  <div className="bg-gradient-to-br from-festival-pink/20 to-festival-yellow/20 rounded-2xl px-6 py-8 text-center border border-festival-pink/30 hover:border-festival-pink/60 transition-all hover:scale-105">
+                    <p className="text-4xl font-black text-festival-pink">00</p>
+                    <p className="text-xs font-bold text-white/70 mt-3 tracking-widest">SEGUNDOS</p>
+                  </div>
+                </div>
+                
+                <div className="border-t border-white/20 pt-8 text-center">
+                  <p className="text-festival-yellow font-bold mb-2 tracking-widest">📍 19 DE SETEMBRO DE 2026</p>
+                  <p className="text-white/80 font-semibold">MOURÃO GARDEN - CAMPO MOURÃO, PR</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Countdown */}
+        <div className="md:hidden absolute bottom-8 left-0 right-0 z-20 flex justify-center px-4 countdown-card">
+          <div className="bg-white/10 backdrop-blur-xl rounded-2xl shadow-2xl p-6 border border-white/20 w-full max-w-sm">
+            <p className="text-festival-yellow text-xs font-bold tracking-widest mb-4 text-center">FALTAM PARA O EVENTO</p>
             
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-8">
-              <div className="bg-gradient-to-br from-festival-yellow to-festival-pink rounded-2xl px-4 md:px-6 py-6 text-center shadow-lg hover:shadow-xl transition-all hover:scale-105">
-                <p className="text-3xl md:text-5xl font-black text-white">238</p>
-                <p className="text-xs md:text-sm font-bold text-white/90 mt-3">DIAS</p>
+            <div className="grid grid-cols-2 gap-2 mb-4">
+              <div className="bg-gradient-to-br from-festival-yellow/20 to-festival-pink/20 rounded-xl px-3 py-4 text-center border border-festival-yellow/30">
+                <p className="text-2xl font-black text-festival-yellow">238</p>
+                <p className="text-xs font-bold text-white/70 mt-1">DIAS</p>
               </div>
-              <div className="bg-gradient-to-br from-festival-purple to-festival-pink rounded-2xl px-4 md:px-6 py-6 text-center shadow-lg hover:shadow-xl transition-all hover:scale-105">
-                <p className="text-3xl md:text-5xl font-black text-white">18</p>
-                <p className="text-xs md:text-sm font-bold text-white/90 mt-3">HORAS</p>
+              <div className="bg-gradient-to-br from-festival-purple/20 to-festival-pink/20 rounded-xl px-3 py-4 text-center border border-festival-purple/30">
+                <p className="text-2xl font-black text-festival-purple">18</p>
+                <p className="text-xs font-bold text-white/70 mt-1">HORAS</p>
               </div>
-              <div className="bg-gradient-to-br from-festival-purple to-festival-yellow rounded-2xl px-4 md:px-6 py-6 text-center shadow-lg hover:shadow-xl transition-all hover:scale-105">
-                <p className="text-3xl md:text-5xl font-black text-white">36</p>
-                <p className="text-xs md:text-sm font-bold text-white/90 mt-3">MINUTOS</p>
+              <div className="bg-gradient-to-br from-festival-purple/20 to-festival-yellow/20 rounded-xl px-3 py-4 text-center border border-festival-purple/30">
+                <p className="text-2xl font-black text-festival-purple">36</p>
+                <p className="text-xs font-bold text-white/70 mt-1">MIN</p>
               </div>
-              <div className="bg-gradient-to-br from-festival-pink to-festival-yellow rounded-2xl px-4 md:px-6 py-6 text-center shadow-lg hover:shadow-xl transition-all hover:scale-105">
-                <p className="text-3xl md:text-5xl font-black text-white">00</p>
-                <p className="text-xs md:text-sm font-bold text-white/90 mt-3">SEGUNDOS</p>
+              <div className="bg-gradient-to-br from-festival-pink/20 to-festival-yellow/20 rounded-xl px-3 py-4 text-center border border-festival-pink/30">
+                <p className="text-2xl font-black text-festival-pink">00</p>
+                <p className="text-xs font-bold text-white/70 mt-1">SEG</p>
               </div>
             </div>
             
-            <div className="border-t border-gray-200 pt-6 text-center">
-              <p className="text-festival-purple text-sm md:text-base font-bold mb-1">📍 19 DE SETEMBRO DE 2026</p>
-              <p className="text-gray-700 text-sm md:text-base font-semibold">MOURÃO GARDEN - CAMPO MOURÃO, PR</p>
+            <div className="border-t border-white/20 pt-4 text-center">
+              <p className="text-festival-yellow text-xs font-bold mb-1">📍 19 SET 2026</p>
+              <p className="text-white/70 text-xs font-semibold">CAMPO MOURÃO, PR</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="sobre" className="py-20 bg-white relative overflow-hidden">
+      {/* About Section - Asymmetric Layout */}
+      <section id="sobre" className="py-24 bg-gradient-to-b from-black to-black/80 relative overflow-hidden">
         <div className="container relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-6xl md:text-7xl font-bold text-festival-purple mb-8" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
-                SOBRE O
-                <span className="text-festival-pink"> FESTIVAL</span>
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="order-2 md:order-1">
+              <img src="/images/stage_background.png" alt="Festival Stage" className="rounded-2xl shadow-2xl w-full h-auto object-cover" />
+            </div>
+
+            <div className="order-1 md:order-2">
+              <p className="text-festival-yellow text-lg font-bold tracking-widest mb-4">SOBRE O FESTIVAL</p>
+              <h2 className="text-5xl md:text-7xl font-black text-white mb-8 leading-tight" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+                UMA HISTÓRIA DE
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-festival-pink to-festival-yellow"> PAIXÃO</span>
               </h2>
 
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                O Festival Cristófoli é um evento de música que celebra a diversidade, a energia e a paixão pela arte. Com uma história que remonta a 2011, o festival evoluiu para se tornar um dos mais esperados do ano, reunindo artistas de diferentes gêneros e públicos de todas as idades.
+              <p className="text-lg text-white/80 mb-6 leading-relaxed">
+                Desde 2011, o Festival Cristófoli evoluiu de um pequeno evento para um dos maiores festivais de rock da região. Celebramos a diversidade, a energia e a paixão pela arte.
               </p>
 
-              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+              <p className="text-lg text-white/80 mb-8 leading-relaxed">
                 Mais do que um evento de entretenimento, o Festival Cristófoli é um movimento cultural que valoriza a comunidade local e promove inclusão através da música.
               </p>
 
               <Link href="#timeline">
-                <Button variant="outline" className="border-festival-purple text-festival-purple hover:bg-festival-purple hover:text-white px-8 py-6 text-lg font-bold rounded-full">
-                  SAIBA MAIS
+                <Button className="bg-gradient-to-r from-festival-pink to-festival-purple hover:shadow-2xl text-white px-8 py-6 text-lg font-bold rounded-full">
+                  EXPLORAR HISTÓRIA
                 </Button>
               </Link>
-            </div>
-
-            <div className="relative">
-              <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
-                <img
-                  src="/images/festival-performance.png"
-                  alt="Festival Cristófoli"
-                  className="w-full h-full object-cover"
-                />
-              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Social Responsibility Section - REDESIGNED */}
-      <section className="py-20 bg-gradient-to-br from-festival-purple via-festival-pink to-festival-purple relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 right-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
-          <div className="absolute bottom-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
-        </div>
-
+      {/* Social Impact Section */}
+      <section className="py-24 bg-black relative overflow-hidden">
         <div className="container relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-6xl md:text-7xl font-bold text-white mb-6" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
-              RESPONSABILIDADE
-              <span className="block">SOCIAL</span>
+            <p className="text-festival-yellow text-lg font-bold tracking-widest mb-4">RESPONSABILIDADE SOCIAL</p>
+            <h2 className="text-5xl md:text-7xl font-black text-white mb-6" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+              IMPACTO NA
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-festival-pink to-festival-yellow"> COMUNIDADE</span>
             </h2>
-            <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
-              O Festival Cristófoli não é apenas um evento de música. Desde 2015, nos comprometemos com a responsabilidade social, repassando o resultado dos festivais para instituições da comunidade.
-            </p>
           </div>
 
-          {/* Main Total Card */}
-          <div className="mb-16">
-            <div className="bg-white rounded-3xl p-12 md:p-16 shadow-2xl text-center">
-              <p className="text-sm font-bold text-festival-yellow mb-4 tracking-widest">TOTAL ARRECADADO DESDE 2015</p>
-              <p className="text-8xl md:text-9xl font-black text-transparent bg-clip-text bg-gradient-to-r from-festival-purple to-festival-pink mb-4" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+          <div className="bg-gradient-to-r from-festival-purple/20 to-festival-pink/20 rounded-3xl border border-festival-pink/30 p-12 md:p-16 mb-12 backdrop-blur-sm">
+            <div className="text-center mb-12">
+              <p className="text-festival-yellow text-lg font-bold tracking-widest mb-4">TOTAL ARRECADADO DESDE 2015</p>
+              <h3 className="text-7xl md:text-9xl font-black text-transparent bg-clip-text bg-gradient-to-r from-festival-pink to-festival-yellow">
                 R$ 183 MIL
-              </p>
-              <p className="text-xl text-gray-600 font-semibold">Repassados para instituições da comunidade</p>
-              <div className="mt-8 pt-8 border-t-2 border-festival-pink/20">
-                <p className="text-sm text-gray-500 mb-2">
-                  <span className="font-bold text-festival-purple">Lar Dona Jacira:</span> R$ 165 MIL
-                </p>
-                <p className="text-sm text-gray-500">
-                  <span className="font-bold text-festival-purple">Lar Dom Bosco:</span> R$ 18 MIL
-                </p>
+              </h3>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
+                <p className="text-festival-yellow font-bold text-lg mb-2">Lar Dona Jacira</p>
+                <p className="text-white/70 text-sm mb-4">Instituição beneficiada desde 2015</p>
+                <p className="text-4xl font-black text-festival-yellow">R$ 165 MIL</p>
+              </div>
+
+              <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
+                <p className="text-festival-purple font-bold text-lg mb-2">Lar Dom Bosco</p>
+                <p className="text-white/70 text-sm mb-4">Novo parceiro desde 2025</p>
+                <p className="text-4xl font-black text-festival-purple">R$ 18 MIL</p>
               </div>
             </div>
           </div>
 
-          {/* Yearly Breakdown */}
-          <div>
-            <h3 className="text-3xl font-bold text-white text-center mb-12" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
-              EVOLUÇÃO POR ANO
-            </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-white/20 hover:border-festival-yellow transition-colors">
-                <p className="text-sm font-bold text-white/80 mb-3">2015 - 5ª Ed.</p>
-                <p className="text-4xl font-bold text-festival-yellow mb-2">R$ 7.000</p>
-                <p className="text-xs text-white/70">Lar Dona Jacira</p>
-              </div>
-
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-white/20 hover:border-festival-yellow transition-colors">
-                <p className="text-sm font-bold text-white/80 mb-3">2016 - 6ª Ed.</p>
-                <p className="text-4xl font-bold text-festival-yellow mb-2">R$ 10.000</p>
-                <p className="text-xs text-white/70">Lar Dona Jacira</p>
-              </div>
-
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-white/20 hover:border-festival-yellow transition-colors">
-                <p className="text-sm font-bold text-white/80 mb-3">2019 - 9ª Ed.</p>
-                <p className="text-4xl font-bold text-festival-yellow mb-2">R$ 20.000</p>
-                <p className="text-xs text-white/70">Lar Dona Jacira</p>
-              </div>
-
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-white/20 hover:border-festival-yellow transition-colors">
-                <p className="text-sm font-bold text-white/80 mb-3">2024 - 11ª Ed.</p>
-                <p className="text-4xl font-bold text-festival-yellow mb-2">R$ 38.000</p>
-                <p className="text-xs text-white/70">Lar Dona Jacira</p>
-              </div>
-
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-white/20 hover:border-festival-yellow transition-colors">
-                <p className="text-sm font-bold text-white/80 mb-3">2025 - 12ª Ed.</p>
-                <p className="text-4xl font-bold text-festival-yellow mb-2">R$ 68.000</p>
-                <p className="text-xs text-white/70">R$50k + R$18k</p>
-              </div>
+          <div className="grid md:grid-cols-5 gap-4">
+            <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-center hover:border-festival-yellow/50 transition-all">
+              <p className="text-festival-yellow font-bold mb-2">2015</p>
+              <p className="text-2xl font-black text-white">R$ 7K</p>
+              <p className="text-xs text-white/50 mt-2">5ª Edição</p>
+            </div>
+            <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-center hover:border-festival-yellow/50 transition-all">
+              <p className="text-festival-yellow font-bold mb-2">2016</p>
+              <p className="text-2xl font-black text-white">R$ 10K</p>
+              <p className="text-xs text-white/50 mt-2">6ª Edição</p>
+            </div>
+            <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-center hover:border-festival-yellow/50 transition-all">
+              <p className="text-festival-yellow font-bold mb-2">2019</p>
+              <p className="text-2xl font-black text-white">R$ 20K</p>
+              <p className="text-xs text-white/50 mt-2">9ª Edição</p>
+            </div>
+            <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-center hover:border-festival-yellow/50 transition-all">
+              <p className="text-festival-yellow font-bold mb-2">2024</p>
+              <p className="text-2xl font-black text-white">R$ 38K</p>
+              <p className="text-xs text-white/50 mt-2">11ª Edição</p>
+            </div>
+            <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-center hover:border-festival-yellow/50 transition-all">
+              <p className="text-festival-yellow font-bold mb-2">2025</p>
+              <p className="text-2xl font-black text-white">R$ 68K</p>
+              <p className="text-xs text-white/50 mt-2">12ª Edição</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Lineup Section */}
-      <section id="lineup" className="py-20 bg-white relative overflow-hidden">
+      <section id="agenda" className="py-24 bg-gradient-to-b from-black to-black/80 relative overflow-hidden">
         <div className="container relative z-10">
-          <h2 className="text-6xl md:text-7xl font-bold text-festival-purple text-center mb-4" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
-            LINEUP
-          </h2>
-          <p className="text-center text-gray-600 mb-16 text-lg max-w-2xl mx-auto">
-            Conheça os artistas que vão fazer história no Festival Cristófoli 2026. Clique em qualquer artista para ver mais detalhes!
-          </p>
+          <div className="text-center mb-16">
+            <p className="text-festival-yellow text-lg font-bold tracking-widest mb-4">ARTISTAS CONFIRMADOS</p>
+            <h2 className="text-5xl md:text-7xl font-black text-white mb-6" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+              LINEUP
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-festival-pink to-festival-yellow"> 2026</span>
+            </h2>
+          </div>
 
-          {/* Artists Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {artists.map(artist => (
-              <Card
-                key={artist.id}
-                className="cursor-pointer hover:shadow-2xl transition-all duration-300 overflow-hidden group"
-                onClick={() => setSelectedArtist(artist)}
-              >
-                <CardContent className="p-0">
-                    <div className="relative h-64 overflow-hidden">
-                    <img
-                      src={artist.image}
-                      alt={artist.name}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
-                      <h3 className="text-2xl font-bold text-white mb-2">{artist.name}</h3>
-                      <p className="text-festival-yellow font-semibold mb-2">{artist.genre}</p>
-                      <p className="text-white/80 text-sm">
-                        🎵 {artist.schedule.time} | {artist.schedule.stage}
-                      </p>
-                    </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {artists.map((artist) => (
+              <Card key={artist.id} className="bg-white/5 border-white/10 hover:border-festival-pink/50 transition-all cursor-pointer group overflow-hidden" onClick={() => setSelectedArtist(artist)}>
+                <CardContent className="p-8">
+                  <div className="mb-4">
+                    <p className="text-festival-yellow text-sm font-bold tracking-widest">{artist.genre}</p>
+                    <h3 className="text-2xl font-black text-white mt-2">{artist.name}</h3>
                   </div>
-                  <div className="p-6">
-                    <p className="text-gray-600 text-sm mb-4">{artist.bio}</p>
-                    <Button
-                      onClick={() => setSelectedArtist(artist)}
-                      variant="outline"
-                      className="w-full border-festival-purple text-festival-purple hover:bg-festival-purple hover:text-white"
-                    >
-                      VER DETALHES
+
+                  <p className="text-white/70 text-sm mb-6 line-clamp-3">{artist.bio}</p>
+
+                  <div className="flex items-center justify-between">
+                    <p className="text-xs text-white/50">{artist.schedule.time}</p>
+                    <Button variant="ghost" className="text-festival-pink hover:text-festival-yellow text-sm">
+                      VER MAIS →
                     </Button>
                   </div>
                 </CardContent>
@@ -242,59 +261,42 @@ export default function Home() {
       </section>
 
       {/* Timeline Section */}
-      <section id="timeline" className="py-20 bg-gradient-to-b from-white to-gray-50">
-        <div className="container">
-          <h2 className="text-6xl md:text-7xl font-bold text-festival-purple text-center mb-4" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
-            HISTÓRIA
-          </h2>
-          <p className="text-center text-gray-600 mb-16 text-lg max-w-2xl mx-auto">
-            Conheça a trajetória do Festival Cristófoli ao longo dos anos
-          </p>
+      <section id="timeline" className="py-24 bg-black relative overflow-hidden">
+        <div className="container relative z-10">
+          <div className="text-center mb-16">
+            <p className="text-festival-yellow text-lg font-bold tracking-widest mb-4">NOSSA JORNADA</p>
+            <h2 className="text-5xl md:text-7xl font-black text-white mb-6" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+              HISTÓRIA DO
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-festival-pink to-festival-yellow"> FESTIVAL</span>
+            </h2>
+          </div>
+
           <Timeline />
         </div>
       </section>
 
-      {/* Tickets Section */}
-      <section id="ingressos" className="py-20 bg-white">
-        <div className="container text-center">
-          <h2 className="text-6xl md:text-7xl font-bold text-festival-purple mb-8" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
-            INGRESSOS
+      {/* CTA Section */}
+      <section className="py-24 bg-gradient-to-r from-festival-purple/20 to-festival-pink/20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/40"></div>
+        
+        <div className="container relative z-10 text-center">
+          <h2 className="text-5xl md:text-7xl font-black text-white mb-8" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+            NÃO PERCA
+            <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-festival-pink to-festival-yellow">O MAIOR FESTIVAL</span>
           </h2>
-          <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-            Garanta seu lugar no maior festival de rock da região. Ingressos limitados!
+
+          <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto">
+            Garanta seu ingresso agora e faça parte da história do Festival Cristófoli 2026
           </p>
-          <Link href="https://ingressos.example.com">
-            <Button className="bg-gradient-to-r from-festival-pink to-festival-purple hover:shadow-2xl text-white px-12 py-8 text-xl font-bold rounded-full">
+
+          <Link href="#agenda">
+            <Button className="bg-gradient-to-r from-festival-pink to-festival-purple hover:shadow-2xl text-white px-16 py-8 text-2xl font-black rounded-full">
               COMPRAR INGRESSOS
             </Button>
           </Link>
         </div>
       </section>
-
-      {/* Artist Detail Modal */}
-      {selectedArtist && (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" onClick={() => setSelectedArtist(null)}>
-          <Card className="max-w-2xl w-full">
-            <CardContent className="p-8">
-              <button
-                onClick={() => setSelectedArtist(null)}
-                className="float-right text-2xl font-bold text-gray-500 hover:text-gray-700"
-              >
-                ✕
-              </button>
-              <div className="clear-both">
-                <img src={selectedArtist.image} alt={selectedArtist.name} className="w-full h-64 object-cover rounded-lg mb-6" />
-                <h2 className="text-4xl font-bold text-festival-purple mb-2">{selectedArtist.name}</h2>
-                <p className="text-festival-yellow font-semibold mb-4">{selectedArtist.genre}</p>
-                <p className="text-gray-600 mb-4">
-                  🎵 {selectedArtist.schedule.time} | {selectedArtist.schedule.stage}
-                </p>
-                <p className="text-gray-700 leading-relaxed">{selectedArtist.bio}</p>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      )}
     </div>
   );
 }

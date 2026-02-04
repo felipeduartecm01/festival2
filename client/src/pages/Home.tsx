@@ -45,7 +45,7 @@ export default function Home() {
         </div>
 
         {/* Countdown Card */}
-        <div className="absolute bottom-8 left-0 right-0 z-20 flex justify-center px-4">
+        <div className="absolute bottom-8 left-0 right-0 z-10 flex justify-center px-4">
           <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl p-8 md:p-12 max-w-3xl w-full border border-white/20">
             <p className="text-festival-purple text-sm md:text-base mb-6 tracking-widest font-bold text-center">FALTAM PARA O FESTIVAL</p>
             

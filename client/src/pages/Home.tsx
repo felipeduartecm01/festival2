@@ -25,7 +25,7 @@ export default function Home() {
             <img src="/images/logo_cristofoli.png" alt="Festival Cristófoli" className="h-24 mx-auto mb-8" />
           </div>
 
-          <h1 className="text-7xl md:text-8xl font-black mb-6" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+          <h1 className="text-7xl md:text-8xl font-black mb-6 hero-title" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
             MAIOR FESTIVAL
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-festival-pink to-festival-yellow">
@@ -33,19 +33,19 @@ export default function Home() {
             </span>
           </h1>
 
-          <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed font-light">
+          <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed font-light hero-description">
             Curta um dia inteiro de música, energia e momentos inesquecíveis com artistas que vão fazer história no palco do Festival Cristófoli 2026.
           </p>
 
           <Link href="#agenda">
-            <Button className="bg-gradient-to-r from-festival-pink to-festival-purple hover:shadow-2xl text-white px-12 py-8 text-xl font-bold rounded-full">
+            <Button className="bg-gradient-to-r from-festival-pink to-festival-purple hover:shadow-2xl text-white px-12 py-8 text-xl font-bold rounded-full hero-button">
               GARANTA SEU INGRESSO JÁ
             </Button>
           </Link>
         </div>
 
         {/* Countdown Card */}
-        <div className="absolute bottom-8 left-0 right-0 z-10 flex justify-center px-4">
+        <div className="absolute bottom-8 left-0 right-0 z-10 flex justify-center px-4 countdown-card">
           <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl p-8 md:p-12 max-w-3xl w-full border border-white/20">
             <p className="text-festival-purple text-sm md:text-base mb-6 tracking-widest font-bold text-center">FALTAM PARA O FESTIVAL</p>
             

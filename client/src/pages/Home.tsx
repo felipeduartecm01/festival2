@@ -44,31 +44,33 @@ export default function Home() {
           </Link>
         </div>
 
-        {/* Countdown */}
-        <div className="absolute bottom-0 left-0 right-0 z-20 bg-gradient-to-t from-black/80 to-transparent pt-20 pb-12">
-          <div className="container text-center">
-            <p className="text-white/80 text-sm mb-6 tracking-widest font-bold">FALTAM</p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 mb-8 max-w-2xl mx-auto">
-              <div className="bg-gradient-to-br from-festival-yellow to-festival-pink rounded-xl px-4 md:px-8 py-6 text-center shadow-lg hover:shadow-xl transition-shadow">
-                <p className="text-2xl md:text-5xl font-black text-white">238</p>
-                <p className="text-xs md:text-sm font-bold text-white/90 mt-2">DIAS</p>
+        {/* Countdown Card */}
+        <div className="absolute bottom-8 left-0 right-0 z-20 flex justify-center px-4">
+          <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl p-8 md:p-12 max-w-3xl w-full border border-white/20">
+            <p className="text-festival-purple text-sm md:text-base mb-6 tracking-widest font-bold text-center">FALTAM PARA O FESTIVAL</p>
+            
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-8">
+              <div className="bg-gradient-to-br from-festival-yellow to-festival-pink rounded-2xl px-4 md:px-6 py-6 text-center shadow-lg hover:shadow-xl transition-all hover:scale-105">
+                <p className="text-3xl md:text-5xl font-black text-white">238</p>
+                <p className="text-xs md:text-sm font-bold text-white/90 mt-3">DIAS</p>
               </div>
-              <div className="bg-gradient-to-br from-festival-purple to-festival-pink rounded-xl px-4 md:px-8 py-6 text-center shadow-lg hover:shadow-xl transition-shadow">
-                <p className="text-2xl md:text-5xl font-black text-white">18</p>
-                <p className="text-xs md:text-sm font-bold text-white/90 mt-2">HORAS</p>
+              <div className="bg-gradient-to-br from-festival-purple to-festival-pink rounded-2xl px-4 md:px-6 py-6 text-center shadow-lg hover:shadow-xl transition-all hover:scale-105">
+                <p className="text-3xl md:text-5xl font-black text-white">18</p>
+                <p className="text-xs md:text-sm font-bold text-white/90 mt-3">HORAS</p>
               </div>
-              <div className="bg-gradient-to-br from-festival-purple to-festival-yellow rounded-xl px-4 md:px-8 py-6 text-center shadow-lg hover:shadow-xl transition-shadow">
-                <p className="text-2xl md:text-5xl font-black text-white">36</p>
-                <p className="text-xs md:text-sm font-bold text-white/90 mt-2">MINUTOS</p>
+              <div className="bg-gradient-to-br from-festival-purple to-festival-yellow rounded-2xl px-4 md:px-6 py-6 text-center shadow-lg hover:shadow-xl transition-all hover:scale-105">
+                <p className="text-3xl md:text-5xl font-black text-white">36</p>
+                <p className="text-xs md:text-sm font-bold text-white/90 mt-3">MINUTOS</p>
               </div>
-              <div className="bg-gradient-to-br from-festival-pink to-festival-yellow rounded-xl px-4 md:px-8 py-6 text-center shadow-lg hover:shadow-xl transition-shadow">
-                <p className="text-2xl md:text-5xl font-black text-white">00</p>
-                <p className="text-xs md:text-sm font-bold text-white/90 mt-2">SEGUNDOS</p>
+              <div className="bg-gradient-to-br from-festival-pink to-festival-yellow rounded-2xl px-4 md:px-6 py-6 text-center shadow-lg hover:shadow-xl transition-all hover:scale-105">
+                <p className="text-3xl md:text-5xl font-black text-white">00</p>
+                <p className="text-xs md:text-sm font-bold text-white/90 mt-3">SEGUNDOS</p>
               </div>
             </div>
-            <div className="text-white text-center space-y-1">
-              <p className="text-sm md:text-base">📍 19 DE SETEMBRO DE 2026</p>
-              <p className="text-sm md:text-base font-bold">MOURÃO GARDEN - CAMPO MOURÃO, PR</p>
+            
+            <div className="border-t border-gray-200 pt-6 text-center">
+              <p className="text-festival-purple text-sm md:text-base font-bold mb-1">📍 19 DE SETEMBRO DE 2026</p>
+              <p className="text-gray-700 text-sm md:text-base font-semibold">MOURÃO GARDEN - CAMPO MOURÃO, PR</p>
             </div>
           </div>
         </div>

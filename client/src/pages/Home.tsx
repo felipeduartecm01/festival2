@@ -3,6 +3,7 @@ import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import Timeline from '@/components/Timeline';
+import { CountdownDisplay } from '@/components/CountdownDisplay';
 import { artists } from '@/data/artists';
 
 export default function Home() {
@@ -66,31 +67,7 @@ export default function Home() {
             {/* Right side - Countdown Card */}
             <div className="hidden md:block countdown-card">
               <div className="bg-white/10 backdrop-blur-xl rounded-3xl shadow-2xl p-12 border border-white/20">
-                <p className="text-festival-yellow text-sm font-bold tracking-widest mb-8 text-center">FALTAM PARA O EVENTO</p>
-                
-                <div className="grid grid-cols-2 gap-4 mb-8">
-                  <div className="bg-gradient-to-br from-festival-yellow/20 to-festival-pink/20 rounded-2xl px-6 py-8 text-center border border-festival-yellow/30 hover:border-festival-yellow/60 transition-all hover:scale-105">
-                    <p className="text-4xl font-black text-festival-yellow">238</p>
-                    <p className="text-xs font-bold text-white/70 mt-3 tracking-widest">DIAS</p>
-                  </div>
-                  <div className="bg-gradient-to-br from-festival-purple/20 to-festival-pink/20 rounded-2xl px-6 py-8 text-center border border-festival-purple/30 hover:border-festival-purple/60 transition-all hover:scale-105">
-                    <p className="text-4xl font-black text-festival-purple">18</p>
-                    <p className="text-xs font-bold text-white/70 mt-3 tracking-widest">HORAS</p>
-                  </div>
-                  <div className="bg-gradient-to-br from-festival-purple/20 to-festival-yellow/20 rounded-2xl px-6 py-8 text-center border border-festival-purple/30 hover:border-festival-purple/60 transition-all hover:scale-105">
-                    <p className="text-4xl font-black text-festival-purple">36</p>
-                    <p className="text-xs font-bold text-white/70 mt-3 tracking-widest">MINUTOS</p>
-                  </div>
-                  <div className="bg-gradient-to-br from-festival-pink/20 to-festival-yellow/20 rounded-2xl px-6 py-8 text-center border border-festival-pink/30 hover:border-festival-pink/60 transition-all hover:scale-105">
-                    <p className="text-4xl font-black text-festival-pink">00</p>
-                    <p className="text-xs font-bold text-white/70 mt-3 tracking-widest">SEGUNDOS</p>
-                  </div>
-                </div>
-                
-                <div className="border-t border-white/20 pt-8 text-center">
-                  <p className="text-festival-yellow font-bold mb-2 tracking-widest">📍 19 DE SETEMBRO DE 2026</p>
-                  <p className="text-white/80 font-semibold">MOURÃO GARDEN - CAMPO MOURÃO, PR</p>
-                </div>
+                <CountdownDisplay targetDate={new Date('2026-09-19T00:00:00')} />
               </div>
             </div>
           </div>
@@ -99,31 +76,7 @@ export default function Home() {
         {/* Mobile Countdown */}
         <div className="md:hidden absolute bottom-8 left-0 right-0 z-20 flex justify-center px-4 countdown-card">
           <div className="bg-white/10 backdrop-blur-xl rounded-2xl shadow-2xl p-6 border border-white/20 w-full max-w-sm">
-            <p className="text-festival-yellow text-xs font-bold tracking-widest mb-4 text-center">FALTAM PARA O EVENTO</p>
-            
-            <div className="grid grid-cols-2 gap-2 mb-4">
-              <div className="bg-gradient-to-br from-festival-yellow/20 to-festival-pink/20 rounded-xl px-3 py-4 text-center border border-festival-yellow/30">
-                <p className="text-2xl font-black text-festival-yellow">238</p>
-                <p className="text-xs font-bold text-white/70 mt-1">DIAS</p>
-              </div>
-              <div className="bg-gradient-to-br from-festival-purple/20 to-festival-pink/20 rounded-xl px-3 py-4 text-center border border-festival-purple/30">
-                <p className="text-2xl font-black text-festival-purple">18</p>
-                <p className="text-xs font-bold text-white/70 mt-1">HORAS</p>
-              </div>
-              <div className="bg-gradient-to-br from-festival-purple/20 to-festival-yellow/20 rounded-xl px-3 py-4 text-center border border-festival-purple/30">
-                <p className="text-2xl font-black text-festival-purple">36</p>
-                <p className="text-xs font-bold text-white/70 mt-1">MIN</p>
-              </div>
-              <div className="bg-gradient-to-br from-festival-pink/20 to-festival-yellow/20 rounded-xl px-3 py-4 text-center border border-festival-pink/30">
-                <p className="text-2xl font-black text-festival-pink">00</p>
-                <p className="text-xs font-bold text-white/70 mt-1">SEG</p>
-              </div>
-            </div>
-            
-            <div className="border-t border-white/20 pt-4 text-center">
-              <p className="text-festival-yellow text-xs font-bold mb-1">📍 19 SET 2026</p>
-              <p className="text-white/70 text-xs font-semibold">CAMPO MOURÃO, PR</p>
-            </div>
+            <CountdownDisplay targetDate={new Date('2026-09-19T00:00:00')} />
           </div>
         </div>
       </section>

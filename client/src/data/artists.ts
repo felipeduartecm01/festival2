@@ -20,26 +20,23 @@ export interface Artist {
 
 export const artists: Artist[] = [
   {
-    id: "the-echoes",
-    name: "The Echoes",
-    genre: "Rock Alternativo",
-    bio: "The Echoes é uma banda de rock alternativo formada em 2015, conhecida por suas guitarras melódicas e letras introspectivas. Com três álbuns lançados, a banda conquistou milhões de fãs em toda a América Latina com sua energia contagiante e presença de palco impressionante.",
-    image: "/images/artist-the-echoes.png",
+    id: "backdoors-band",
+    name: "Backdoors Band",
+    genre: "Rock Tributo",
+    bio: "Backdoors Band sobe ao palco com um tributo intenso e fiel ao The Doors, recriando toda a atmosfera, a psicodelia e a força que marcaram a trajetória de Jim Morrison & The Doors. Mais do que um cover, é uma experiência completa: clássicos atemporais, presença de palco marcante e uma verdadeira viagem sonora direto aos anos 60, no auge do rock psicodélico.",
+    image: "/images/artist-backdoors-band.png",
     schedule: {
       day: "19 de Setembro",
       time: "18:00 - 19:00",
       stage: "Palco Principal"
     },
     social: {
-      instagram: "theechoes_band",
-      spotify: "the-echoes",
-      youtube: "@theechoesband",
-      twitter: "@theechoes"
+      instagram: "backdoorsbandoficial"
     },
     highlights: [
-      "3 álbuns de estúdio",
-      "Mais de 50 milhões de streams",
-      "Turnê internacional em 2024"
+      "Tributo fiel ao The Doors",
+      "Recria a atmosfera psicodélica dos anos 60",
+      "Experiência completa com clássicos atemporais"
     ]
   },
   {

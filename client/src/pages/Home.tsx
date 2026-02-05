@@ -217,21 +217,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Timeline Section */}
-      <section id="timeline" className="py-24 bg-black relative overflow-hidden">
-        <div className="container relative z-10">
-          <div className="text-center mb-16">
-            <p className="text-festival-yellow text-lg font-bold tracking-widest mb-4">NOSSA JORNADA</p>
-            <h2 className="text-5xl md:text-7xl font-black text-white mb-6" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
-              HISTÓRIA DO
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-festival-pink to-festival-yellow"> FESTIVAL</span>
-            </h2>
-          </div>
-
-          <Timeline />
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-24 bg-gradient-to-r from-festival-purple/20 to-festival-pink/20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/40"></div>

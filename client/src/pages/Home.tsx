@@ -97,11 +97,15 @@ export default function Home() {
               </h2>
 
               <p className="text-lg text-white/80 mb-6 leading-relaxed">
-                Desde 2011, o Festival Cristófoli evoluiu de um pequeno evento para um dos maiores festivais de rock da região. Celebramos a diversidade, a energia e a paixão pela arte.
+                Desde 2011, o Festival Cristófoli construiu uma trajetória sólida e inspiradora, evoluindo de um pequeno encontro entre amantes do rock para o maior evento de rock de Campo Mourão e região. Hoje, é um acontecimento que faz parte do calendário cultural da cidade e é aguardado com expectativa por milhares de pessoas a cada edição.
+              </p>
+
+              <p className="text-lg text-white/80 mb-6 leading-relaxed">
+                O Festival celebra a diversidade, a energia e a paixão pela música e pela arte, reunindo gerações em torno do rock e de suas múltiplas expressões.
               </p>
 
               <p className="text-lg text-white/80 mb-8 leading-relaxed">
-                Mais do que um evento de entretenimento, o Festival Cristófoli é um movimento cultural que valoriza a comunidade local e promove inclusão através da música.
+                Mais do que entretenimento, o Festival Cristófoli é um movimento cultural que promove inclusão e transforma a música em um elo capaz de conectar pessoas, histórias e propósitos.
               </p>
 
               <Link href="#timeline">

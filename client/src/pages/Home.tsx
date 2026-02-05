@@ -182,6 +182,103 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ESG Section */}
+      <section className="py-24 bg-gradient-to-b from-black/80 to-black relative overflow-hidden">
+        <div className="container relative z-10">
+          <div className="text-center mb-16">
+            <p className="text-festival-yellow text-lg font-bold tracking-widest mb-4">COMPROMISSO ESG</p>
+            <h2 className="text-5xl md:text-7xl font-black text-white mb-6" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+              RESPONSABILIDADE
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-festival-pink to-festival-yellow"> INTEGRAL</span>
+            </h2>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto">O Festival Cristófoli compromete-se com práticas sustentáveis em três pilares: social, ambiental e de governança</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* Social Pillar */}
+            <div className="group">
+              <div className="bg-gradient-to-br from-festival-pink/20 to-festival-purple/20 rounded-3xl border border-festival-pink/30 p-8 backdrop-blur-sm hover:border-festival-pink/60 transition-all h-full">
+                <div className="text-5xl mb-6">👥</div>
+                <h3 className="text-2xl font-black text-white mb-4">SOCIAL</h3>
+                <p className="text-white/70 mb-6 leading-relaxed">Impacto direto na comunidade através de doações, programas de inclusão e apoio a instituições locais.</p>
+                <ul className="space-y-3 text-sm text-white/60">
+                  <li className="flex items-start">
+                    <span className="text-festival-pink mr-3">✓</span>
+                    <span>R$ 183 mil doados desde 2015</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-festival-pink mr-3">✓</span>
+                    <span>Parcerias com Lar Dona Jacira e Lar Dom Bosco</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-festival-pink mr-3">✓</span>
+                    <span>Oportunidades de trabalho para artistas locais</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-festival-pink mr-3">✓</span>
+                    <span>Inclusão e diversidade no lineup</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Environmental Pillar */}
+            <div className="group">
+              <div className="bg-gradient-to-br from-festival-yellow/20 to-festival-pink/20 rounded-3xl border border-festival-yellow/30 p-8 backdrop-blur-sm hover:border-festival-yellow/60 transition-all h-full">
+                <div className="text-5xl mb-6">🌍</div>
+                <h3 className="text-2xl font-black text-white mb-4">AMBIENTAL</h3>
+                <p className="text-white/70 mb-6 leading-relaxed">Práticas sustentáveis para minimizar impacto ambiental e promover consciência ecológica.</p>
+                <ul className="space-y-3 text-sm text-white/60">
+                  <li className="flex items-start">
+                    <span className="text-festival-yellow mr-3">✓</span>
+                    <span>Gestão responsável de resíduos</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-festival-yellow mr-3">✓</span>
+                    <span>Uso de energia renovável</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-festival-yellow mr-3">✓</span>
+                    <span>Redução de plástico descartável</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-festival-yellow mr-3">✓</span>
+                    <span>Compensação de carbono</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Governance Pillar */}
+            <div className="group">
+              <div className="bg-gradient-to-br from-festival-purple/20 to-festival-pink/20 rounded-3xl border border-festival-purple/30 p-8 backdrop-blur-sm hover:border-festival-purple/60 transition-all h-full">
+                <div className="text-5xl mb-6">⚖️</div>
+                <h3 className="text-2xl font-black text-white mb-4">GOVERNANÇA</h3>
+                <p className="text-white/70 mb-6 leading-relaxed">Transparência, ética e conformidade em todas as operações e decisões do festival.</p>
+                <ul className="space-y-3 text-sm text-white/60">
+                  <li className="flex items-start">
+                    <span className="text-festival-purple mr-3">✓</span>
+                    <span>Transparência financeira e relatórios públicos</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-festival-purple mr-3">✓</span>
+                    <span>Código de conduta ético</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-festival-purple mr-3">✓</span>
+                    <span>Conformidade com legislação local</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-festival-purple mr-3">✓</span>
+                    <span>Gestão responsável de parcerias</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Lineup Section */}
       <section id="agenda" className="py-24 bg-gradient-to-b from-black to-black/80 relative overflow-hidden">
         <div className="container relative z-10">

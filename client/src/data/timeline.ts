@@ -141,35 +141,48 @@ export const timelineEvents: TimelineEvent[] = [
   },
   {
     year: 2022,
-    title: "Tecnologia de Ponta",
-    description: "Com tecnologia de ponta, o festival oferecia experiência visual e sonora incomparável, estabelecendo novos padrões.",
+    title: "10º Festival - Energia Solar para o Bem",
+    description: "O 10º Festival Cristófoli em 2022 arrecadou R$40.000,00 investidos em um projeto revolucionário de energia solar para o Lar Dona Jacira. Este investimento transformou a realidade da instituição, permitindo uma economia de até 90% na conta de luz, demonstrando que a responsabilidade social do festival vai além de doações diretas, criando impacto duradouro e sustentável.",
     image: "/images/timeline-2022.png",
     highlights: [
-      "Tecnologia de ponta",
-      "Laser shows avançados",
-      "Som de qualidade superior",
-      "Experiência imersiva"
+      "10º Festival Cristófoli",
+      "R$40.000,00 em projeto de energia solar",
+      "Economia de até 90% na conta de luz",
+      "Impacto sustentável e duradouro"
     ]
   },
   {
     year: 2023,
     title: "11º Festival - Recorde de Solidariedade",
-    description: "O 11º Festival Cristófoli em 2023 estabeleceu um novo recorde de responsabilidade social, arrecadando R$40.000,00 para o Lar Dona Jacira. Este foi o maior valor repassado até então, demonstrando o crescimento exponencial do impacto social do festival e o compromisso contínuo com a comunidade.",
+    description: "O 11º Festival Cristófoli em 2023 estabeleceu um novo recorde de responsabilidade social, arrecadando R$40.000,00 para o Lar Dona Jacira. Este foi um importante valor repassado, demonstrando o crescimento exponencial do impacto social do festival e o compromisso contínuo com a comunidade.",
     image: "/images/timeline-2023-donation.png",
     highlights: [
       "11º Festival Cristófoli",
-      "Recorde de arrecadação",
-      "R$40.000,00 para Lar Dona Jacira",
-      "Maior doação até então"
+      "Arrecadação de R$40.000,00",
+      "Doação para Lar Dona Jacira",
+      "Impacto social crescente"
     ]
   },
   {
-    year: 2025,
-    title: "12º Festival - Expansão do Impacto Social",
-    description: "O 12º Festival Cristófoli em 2025 expandiu ainda mais seu compromisso com a responsabilidade social, arrecadando um total de R$68.000,00. Desta vez, o festival ampliou seu alcance de solidariedade, repassando R$50.000,00 para o Lar Dona Jacira e R$18.000,00 para o Lar Dom Bosco, demonstrando o crescimento e a consolidação do impacto social do festival em múltiplas instituições da comunidade.",
-    image: "/images/timeline-2025.png",
+    year: 2024,
+    title: "12º Festival - Continuidade do Impacto",
+    description: "O 12º Festival Cristófoli em 2024 continuou seu compromisso com a responsabilidade social, arrecadando R$38.000,00 para o Lar Dona Jacira, reforçando o compromisso contínuo com a instituição parceira e a comunidade local.",
+    image: "/images/timeline-2024.png",
     highlights: [
       "12º Festival Cristófoli",
+      "R$38.000,00 para Lar Dona Jacira",
+      "Compromisso contínuo",
+      "Impacto comunitário"
+    ]
+  },
+
+  {
+    year: 2025,
+    title: "13º Festival - Expansão do Impacto Social",
+    description: "O 13º Festival Cristófoli em 2025 expandiu ainda mais seu compromisso com a responsabilidade social, arrecadando um total de R$68.000,00. Desta vez, o festival ampliou seu alcance de solidariedade, repassando R$50.000,00 para o Lar Dona Jacira e R$18.000,00 para o Lar Dom Bosco, demonstrando o crescimento e a consolidação do impacto social do festival em múltiplas instituições da comunidade.",
+    image: "/images/timeline-2025.png",
+    highlights: [
+      "13º Festival Cristófoli",
       "Arrecadação total: R$68.000,00",
       "R$50.000,00 para Lar Dona Jacira",
       "R$18.000,00 para Lar Dom Bosco"

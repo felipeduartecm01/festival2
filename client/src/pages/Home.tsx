@@ -212,10 +212,6 @@ export default function Home() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-festival-pink mr-3">✓</span>
-                    <span>Oportunidades de trabalho para artistas locais</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-festival-pink mr-3">✓</span>
                     <span>Inclusão e diversidade no lineup</span>
                   </li>
                 </ul>

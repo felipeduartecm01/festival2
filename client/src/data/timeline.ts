@@ -165,14 +165,14 @@ export const timelineEvents: TimelineEvent[] = [
   },
   {
     year: 2024,
-    title: "12º Festival - Continuidade do Impacto",
-    description: "O 12º Festival Cristófoli em 2024 continuou seu compromisso com a responsabilidade social, arrecadando R$38.000,00 para o Lar Dona Jacira, reforçando o compromisso contínuo com a instituição parceira e a comunidade local.",
+    title: "12º Festival - Impacto Diversificado",
+    description: "O 12º Festival Cristófoli em 2024 arrecadou R$50.000,00, demonstrando o crescimento do impacto social do festival. A arrecadação foi distribuída de forma estratégica: R$38.000,00 repassados ao Lar Dona Jacira, consolidando a parceria de anos, e R$12.000,00 investidos na compra de uma máquina de picotar papel para a Associação de Reciclagem, expandindo o compromisso ambiental e social do festival.",
     image: "/images/timeline-2024.png",
     highlights: [
       "12º Festival Cristófoli",
+      "Arrecadação total: R$50.000,00",
       "R$38.000,00 para Lar Dona Jacira",
-      "Compromisso contínuo",
-      "Impacto comunitário"
+      "R$12.000,00 máquina de picotar papel - Associação de Reciclagem"
     ]
   },
 

@@ -133,7 +133,7 @@ export default function Home() {
             <div className="text-center mb-12">
               <p className="text-festival-yellow text-lg font-bold tracking-widest mb-4">TOTAL ARRECADADO DESDE 2015</p>
               <h3 className="text-7xl md:text-9xl font-black text-transparent bg-clip-text bg-gradient-to-r from-festival-pink to-festival-yellow">
-                R$ 261 MIL
+                R$ 279 MIL
               </h3>
             </div>
 
@@ -141,7 +141,7 @@ export default function Home() {
               <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
                 <p className="text-festival-yellow font-bold text-lg mb-2">Lar Dona Jacira</p>
                 <p className="text-white/70 text-sm mb-4">Instituição beneficiada desde 2015</p>
-                <p className="text-4xl font-black text-festival-yellow">R$ 243 MIL</p>
+                <p className="text-4xl font-black text-festival-yellow">R$ 261 MIL</p>
               </div>
 
               <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
@@ -154,19 +154,9 @@ export default function Home() {
 
           <div className="grid md:grid-cols-5 gap-4">
             <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-center hover:border-festival-yellow/50 transition-all">
-              <p className="text-festival-yellow font-bold mb-2">2015</p>
-              <p className="text-2xl font-black text-white">R$ 7K</p>
-              <p className="text-xs text-white/50 mt-2">5ª Edição</p>
-            </div>
-            <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-center hover:border-festival-yellow/50 transition-all">
-              <p className="text-festival-yellow font-bold mb-2">2016</p>
-              <p className="text-2xl font-black text-white">R$ 10K</p>
-              <p className="text-xs text-white/50 mt-2">6ª Edição</p>
-            </div>
-            <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-center hover:border-festival-yellow/50 transition-all">
-              <p className="text-festival-yellow font-bold mb-2">2019</p>
-              <p className="text-2xl font-black text-white">R$ 20K</p>
-              <p className="text-xs text-white/50 mt-2">9ª Edição</p>
+              <p className="text-festival-yellow font-bold mb-2">2021</p>
+              <p className="text-2xl font-black text-white">-</p>
+              <p className="text-xs text-white/50 mt-2">Retorno</p>
             </div>
             <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-center hover:border-festival-yellow/50 transition-all">
               <p className="text-festival-yellow font-bold mb-2">2022</p>
@@ -180,7 +170,7 @@ export default function Home() {
             </div>
             <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-center hover:border-festival-yellow/50 transition-all">
               <p className="text-festival-yellow font-bold mb-2">2024</p>
-              <p className="text-2xl font-black text-white">R$ 38K</p>
+              <p className="text-2xl font-black text-white">R$ 50K</p>
               <p className="text-xs text-white/50 mt-2">12ª Edição</p>
             </div>
             <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-center hover:border-festival-yellow/50 transition-all">

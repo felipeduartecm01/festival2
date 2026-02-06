@@ -5,9 +5,12 @@ import { Card, CardContent } from '@/components/ui/card';
 import Timeline from '@/components/Timeline';
 import { CountdownDisplay } from '@/components/CountdownDisplay';
 import { artists } from '@/data/artists';
+import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
 
 export default function Home() {
   const [selectedArtist, setSelectedArtist] = useState<typeof artists[0] | null>(null);
+  const { ref: esgRef, isVisible: esgVisible } = useIntersectionObserver({ threshold: 0.2 });
+  const { ref: lineupRef, isVisible: lineupVisible } = useIntersectionObserver({ threshold: 0.1 });
 
   return (
     <div className="min-h-screen bg-black overflow-hidden">
@@ -183,7 +186,7 @@ export default function Home() {
       </section>
 
       {/* ESG Section */}
-      <section className="py-24 bg-gradient-to-b from-black/80 to-black relative overflow-hidden">
+      <section ref={esgRef} className={`py-24 bg-gradient-to-b from-black/80 to-black relative overflow-hidden esg-section ${esgVisible ? 'visible' : ''}`}>
         <div className="container relative z-10">
           <div className="text-center mb-16">
             <p className="text-festival-yellow text-lg font-bold tracking-widest mb-4">COMPROMISSO ESG</p>
@@ -196,7 +199,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {/* Social Pillar */}
-            <div className="group">
+            <div className={`group esg-card ${esgVisible ? 'visible' : ''}`}>
               <div className="bg-gradient-to-br from-festival-pink/20 to-festival-purple/20 rounded-3xl border border-festival-pink/30 p-8 backdrop-blur-sm hover:border-festival-pink/60 transition-all h-full">
                 <div className="text-5xl mb-6">👥</div>
                 <h3 className="text-2xl font-black text-white mb-4">SOCIAL</h3>
@@ -219,7 +222,7 @@ export default function Home() {
             </div>
 
             {/* Environmental Pillar */}
-            <div className="group">
+            <div className={`group esg-card ${esgVisible ? 'visible' : ''}`}>
               <div className="bg-gradient-to-br from-festival-yellow/20 to-festival-pink/20 rounded-3xl border border-festival-yellow/30 p-8 backdrop-blur-sm hover:border-festival-yellow/60 transition-all h-full">
                 <div className="text-5xl mb-6">🌍</div>
                 <h3 className="text-2xl font-black text-white mb-4">AMBIENTAL</h3>
@@ -246,7 +249,7 @@ export default function Home() {
             </div>
 
             {/* Governance Pillar */}
-            <div className="group">
+            <div className={`group esg-card ${esgVisible ? 'visible' : ''}`}>
               <div className="bg-gradient-to-br from-festival-purple/20 to-festival-pink/20 rounded-3xl border border-festival-purple/30 p-8 backdrop-blur-sm hover:border-festival-purple/60 transition-all h-full">
                 <div className="text-5xl mb-6">⚖️</div>
                 <h3 className="text-2xl font-black text-white mb-4">GOVERNANÇA</h3>
@@ -276,7 +279,7 @@ export default function Home() {
       </section>
 
       {/* Lineup Section */}
-      <section id="agenda" className="py-24 bg-gradient-to-b from-black to-black/80 relative overflow-hidden">
+      <section ref={lineupRef} id="agenda" className={`py-24 bg-gradient-to-b from-black to-black/80 relative overflow-hidden lineup-section ${lineupVisible ? 'visible' : ''}`}>
         <div className="container relative z-10">
           <div className="text-center mb-16">
             <p className="text-festival-yellow text-lg font-bold tracking-widest mb-4">ARTISTAS CONFIRMADOS</p>
@@ -287,8 +290,8 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {artists.map((artist) => (
-              <Card key={artist.id} className="bg-white/5 border-white/10 hover:border-festival-pink/50 transition-all cursor-pointer group overflow-hidden" onClick={() => setSelectedArtist(artist)}>
+            {artists.map((artist, index) => (
+              <Card key={artist.id} className={`bg-white/5 border-white/10 hover:border-festival-pink/50 transition-all cursor-pointer group overflow-hidden artist-card ${lineupVisible ? 'visible' : ''}`} style={lineupVisible ? { animationDelay: `${index * 0.1}s` } : {}} onClick={() => setSelectedArtist(artist)}>
                 <CardContent className="p-8">
                   <div className="mb-4">
                     <p className="text-festival-yellow text-sm font-bold tracking-widest">{artist.genre}</p>

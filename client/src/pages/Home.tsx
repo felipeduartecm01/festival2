@@ -50,7 +50,7 @@ export default function Home() {
               </div>
 
               <p className="text-xl md:text-2xl mb-8 leading-relaxed font-light hero-description max-w-lg">
-                Um dia inteiro de música, energia e momentos inesquecíveis com artistas que vão fazer história no palco.
+                O maior festival de rock de Campo Mourão e região. Um dia inteiro de música, energia e 10 bandas de todo o Brasil fazendo história no palco.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 hero-button">

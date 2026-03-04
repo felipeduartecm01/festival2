@@ -513,15 +513,106 @@
     animation-delay: 0.6s;
   }
 
+  /* Carousel Animations */
+  @keyframes slideCarousel {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .carousel-image {
+    animation: slideCarousel 0.5s ease-out;
+  }
+
+  .carousel-nav-btn {
+    transition: all 0.3s ease;
+  }
+
+  .carousel-nav-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(255, 20, 147, 0.4);
+  }
+
+  .carousel-indicator {
+    transition: all 0.3s ease;
+  }
+
+  .carousel-indicator:hover {
+    background-color: rgba(255, 215, 0, 0.8);
+  }
+
+  /* FAQ Accordion Animations */
+  .faq-item {
+    transition: all 0.3s ease;
+  }
+
+  .faq-button {
+    transition: all 0.3s ease;
+  }
+
+  .faq-button:hover {
+    opacity: 0.9;
+  }
+
+  .faq-content {
+    animation: slideUpIn 0.3s ease-out;
+  }
+
+  /* Section Title Animations */
+  .section-title {
+    animation: fadeInDown 0.6s ease-out;
+  }
+
+  .section-subtitle {
+    animation: fadeInDown 0.6s ease-out 0.1s both;
+  }
+
+  /* CTA Section Animations */
+  .cta-section {
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  .cta-title {
+    animation: fadeInDown 0.6s ease-out;
+  }
+
+  .cta-button {
+    animation: fadeInUp 0.6s ease-out 0.2s both;
+    transition: all 0.3s ease;
+  }
+
+  .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+
   /* Respeitar preferência de usuário por movimento reduzido */
   @media (prefers-reduced-motion: reduce) {
     .esg-section.visible,
     .esg-card.visible,
     .lineup-section.visible,
-    .artist-card.visible {
+    .artist-card.visible,
+    .carousel-image,
+    .faq-content,
+    .section-title,
+    .section-subtitle,
+    .cta-section,
+    .cta-title,
+    .cta-button {
       animation: none;
       opacity: 1;
       transform: none;
+    }
+
+    .carousel-nav-btn,
+    .carousel-indicator,
+    .faq-item,
+    .faq-button,
+    .cta-button {
+      transition: none;
     }
   }
 }

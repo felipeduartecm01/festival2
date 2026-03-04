@@ -53,6 +53,14 @@ const ARTISTS = [
     description: 'Folk, bossa nova e música brasileira',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031941384/GgoiTVZT48VD6sZ4ggWoPL/stage-performance-JA6eKhwo8MjoMbRwpyQsVN.webp',
   },
+  {
+    id: 7,
+    name: 'B2S - Back 2 School',
+    genre: '00\'s Hits',
+    time: '17:30 - 18:30',
+    description: 'Os maiores sucessos dos anos 2000',
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031941384/GgoiTVZT48VD6sZ4ggWoPL/pasted_file_xAwJRQ_image_b14db4eb.png',
+  },
 ];
 
 const FAQS = [

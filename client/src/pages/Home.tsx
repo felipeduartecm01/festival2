@@ -11,7 +11,7 @@ const ARTISTS = [
     genre: 'Rock Tributo',
     time: '18:00 - 19:00',
     description: 'Tributo intenso ao The Doors',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031941384/GgoiTVZT48VD6sZ4ggWoPL/stage-performance-JA6eKhwo8MjoMbRwpyQsVN.webp',
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031941384/GgoiTVZT48VD6sZ4ggWoPL/pasted_file_buB6PI_image_19d256ee.png',
   },
   {
     id: 2,

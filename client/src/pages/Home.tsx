@@ -158,7 +158,7 @@ export default function Home() {
             </p>
             <Link href="#ingressos">
               <Button className="bg-festival-yellow hover:bg-festival-yellow/90 text-festival-purple px-16 py-4 text-xl font-black rounded-full w-full sm:w-auto">
-                GARANTA SEU INGRESSO JÁ
+                PRÉ-VENDA
               </Button>
             </Link>
           </div>

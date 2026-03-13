@@ -69,6 +69,14 @@ const ARTISTS = [
     description: 'Tributo oficial ao System Of A Down',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031941384/GgoiTVZT48VD6sZ4ggWoPL/pasted_file_wIWkAI_image_ce35f691.png',
   },
+  {
+    id: 9,
+    name: 'Candyman Club',
+    genre: 'Sucessos dos Anos 80',
+    time: '20:30 - 21:30',
+    description: 'Os maiores sucessos dos anos 80',
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031941384/GgoiTVZT48VD6sZ4ggWoPL/pasted_file_EMD929_image_ad8d3cc7.png',
+  },
 ];
 
 const FAQS = [

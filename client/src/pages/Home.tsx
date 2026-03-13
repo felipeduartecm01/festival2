@@ -8,10 +8,10 @@ const ARTISTS = [
   {
     id: 1,
     name: 'Backdoors Band',
-    genre: 'Rock Tributo',
-    time: '18:00 - 19:00',
-    description: 'Tributo intenso ao The Doors',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031941384/GgoiTVZT48VD6sZ4ggWoPL/pasted_file_buB6PI_image_19d256ee.png',
+    genre: 'The Doors Cover Brasil',
+    time: '16:00 - 17:00',
+    description: 'Tributo oficial ao The Doors',
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031941384/GgoiTVZT48VD6sZ4ggWoPL/pasted_file_GttyNF_image_a754cfff.png',
   },
   {
     id: 2,

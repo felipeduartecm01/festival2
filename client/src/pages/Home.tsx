@@ -101,6 +101,14 @@ const ARTISTS = [
     description: 'Tributo oficial ao Iron Maiden',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031941384/GgoiTVZT48VD6sZ4ggWoPL/pasted_file_6mbJZL_image_a1c6e4b6.png',
   },
+  {
+    id: 13,
+    name: 'Escola de Música Adriano Lima',
+    genre: 'Apresentação Musical',
+    time: '15:00 - 16:00',
+    description: 'Apresentação dos alunos da escola de música',
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031941384/GgoiTVZT48VD6sZ4ggWoPL/pasted_file_UFhSkp_image_27bb76af.png',
+  },
 ];
 
 const FAQS = [

@@ -136,24 +136,9 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center justify-center h-full">
-          <p className="text-festival-neon-green text-lg md:text-xl font-bold tracking-widest mb-4 uppercase animate-pulse drop-shadow-lg">
-            14º Festival de Rock
-          </p>
-          <h1 className="text-5xl md:text-7xl font-black text-white mb-6 leading-tight drop-shadow-2xl" style={{ fontFamily: "'Bebas Neue', sans-serif", textShadow: '0 4px 20px rgba(0, 0, 0, 0.8), 0 0 30px rgba(123, 44, 191, 0.4)' }}>
-            VIVA UMA
-            <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-festival-pink via-festival-yellow to-festival-pink" style={{ textShadow: '0 4px 20px rgba(0, 0, 0, 0.8)' }}>
-              EXPERIÊNCIA ÚNICA
-            </span>
-            <br />
-            NO ROCK
-          </h1>
-          <p className="text-white text-lg md:text-xl mb-8 leading-relaxed font-medium max-w-2xl mx-auto drop-shadow-lg" style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.8)' }}>
-            O maior festival de rock de Campo Mourão e região. Um dia inteiro de música, energia e 10 bandas de todo o Brasil fazendo história no palco.
-          </p>
+        <div className="relative z-10 flex flex-col items-center justify-center h-full">
           <Link href="#ingressos">
-            <Button className="bg-gradient-to-r from-festival-pink to-festival-purple hover:shadow-2xl text-white px-12 py-8 text-xl font-bold rounded-full w-full sm:w-auto">
+            <Button className="bg-gradient-to-r from-festival-pink to-festival-purple hover:shadow-2xl text-white px-12 py-8 text-xl font-bold rounded-full">
               GARANTA SEU INGRESSO JÁ
             </Button>
           </Link>
